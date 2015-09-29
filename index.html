@@ -7,143 +7,195 @@
   </head>
   <body>
 
+
+
     <header class="main-header">
-		<div class="main-logo">
+
+
+		<div class="logo logo--text">
 			<a href="index.html">
 				<img src="http://placehold.it/74x23" width="74" height="23">
 			</a>
 		</div>
+
+
+
 		<nav class="main-nav">
-			<ul>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Блог</a></li>
-				<li><a href="#">Отзывы</a></li>
-				<li><a href="#">Конкурс</a></li>
+			<ul class="main-nav__list">
+				<li class="main-nav__item"><a href="#">Информация</a></li>
+				<li class="main-nav__item"><a href="#">Блог</a></li>
+				<li class="main-nav__item"><a href="#">Отзывы</a></li>
+				<li class="main-nav__item"><a href="#">Конкурс</a></li>
 			</ul>
+            <a class="main-nav__toggle main-nav__toggle--close" href="#"></a>
 		</nav>
-        <a class="main-nav-btn" href="#"></a>
+
+
     </header>
-    <div class="main-content">
-        <h1>Взгляните на жизнь иначе!</h1>
+
+
+
+    <main class="main-content">
+
+
+        <h1 class="main-content__title">Взгляните на жизнь иначе!</h1>
+
+
     	<div class="app-download">
-    		<a class="btn" href="#">Скачать приложение</a>
-    		<div class="app-download-platform">
-    			<a href="#">
+
+    		<a class="btn  btn--bord-white  btn--round" href="#">Скачать приложение</a>
+
+    		<div class="app-download__platform">
+    			<a class="app-download__link" href="#">
     				<img src="http://placehold.it/46x57" width="46" height="57">
     			</a>
-    			<a href="#">
+    			<a class="app-download__link" href="#">
     				<img src="http://placehold.it/42x47" width="42" height="47">
     			</a>
-    			<a href="#">
+    			<a class="app-download__link" href="#">
     				<img src="http://placehold.it/46x57" width="46" height="57">
     			</a>
     		</div>
+
     	</div>
-    	<section class="main-features">
-    		<div class="promo">
+
+
+    	<section class="features">
+
+    		<div class="features__promo">
     			<p>Устали от серости мегаполиса?</p>
     			<p>Нам есть что Вам предложить!</p>
     		</div>
-    		<div class="feature-items">
-    			<section class="feature-item">
-    				<h2>Поднимает настроение</h2>
-    				<p>Приложение позволяет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+
+    		<div class="features__group">
+    			<section class="features__item">
+    				<h1 class="features__title">Поднимает настроение</h1>
+    				<p class="features__text">Приложение позволяет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
     			</section>
-    			<section class="feature-item">
-    				<h2>Меняет мир вокруг</h2>
-    				<p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+    			<section class="features__item">
+    				<h1 class="features__title">Меняет мир вокруг</h1>
+    				<p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
     			</section>
-    			<section class="feature-item">
-    				<h2>Заводит новых друзей</h2>
-    				<p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+    			<section class="features__item">
+    				<h1 class="features__title">Заводит новых друзей</h1>
+    				<p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
     			</section>
     		</div>
+
     	</section>
+
+
     	<div class="reviews">
-    		<figure class="review-item">
-    			<figcaption>Николай Петров</figcaption>
-    			"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
-    		</figure>
-    		<figure class="review-item">
-    			<figcaption>Николай Петров</figcaption>
-    			"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
-    		</figure>
-    		<figure class="review-item">
-    			<figcaption>Николай Петров</figcaption>
-    			"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
-    		</figure>
-            <div class="reviews-control">
+
+            <div class="reviews__content">
+
+        		<figure class="reviews__item">
+        			<figcaption class="reviews__descr">Николай Петров</figcaption>
+        			"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+        		</figure>
+
+        		<figure class="reviews__item">
+        			<figcaption class="reviews__descr">Николай Петров</figcaption>
+        			"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+        		</figure>
+
+        		<figure class="reviews__item">
+        			<figcaption class="reviews__descr">Николай Петров</figcaption>
+        			"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+        		</figure>
+
+            </div>
+
+            <div class="controls controls--points">
                 <input type="radio" id="review1">
                 <input type="radio" id="review2">
                 <input type="radio" id="review3">
-                <label for="review1"></label>
-                <label for="review2"></label>
-                <label for="review3"></label>
+                <label class="controls__item  controls__item--active" for="review1"></label>
+                <label class="controls__item" for="review2"></label>
+                <label class="controls__item" for="review3"></label>
             </div>
+
     	</div>
+
+
     	<div class="main-price">
-    		<table>
-    			<tr>
-	    			<th>
-		    			<span>
+
+    		<table class="table  table--dark-head">
+
+    			<tr class="table__head-row">
+	    			<th class="table__head-cell">
+		    			<span class="promo-stripe  promo-stripe--pink">
 		    				База
 		    			</span>
 		    			1,99 USD
 	    			</th>
-	    			<th>
+	    			<th class="table__head-cell">
 	    				<span>
 	    					Стандарт
 	    				</span>
 	    				3,99 USD
 	    			</th>
-	    			<th>
+	    			<th class="table__head-cell">
 	    				<span>
 	    					Анлим
 	    				</span>
 	    				9,99 USD
 	    			</th>
     			</tr>
+
     			<tr>
 	    			<td>Розовый фильтр</td>
 	    			<td>Розовый фильтр</td>
 	    			<td>Розовый фильтр</td>
     			</tr>
+
     			<tr>
 	    			<td>Смайлики</td>
 	    			<td>Смайлики</td>
 	    			<td>Смайлики</td>
     			</tr>
+
     			<tr>
 	    			<td>Комментарии</td>
 	    			<td>Комментарии</td>
 	    			<td>Комментарии</td>
     			</tr>
+
     		</table>
-            <div class="price-controls">
-                <span class="price-controls-item"></span>
-                <span class="price-controls-item active"></span>
-                <span class="price-controls-item"></span>
+
+            <div class="controls  controls--points">
+                <span class="controls__item"></span>
+                <span class="controls__item  controls__item--active"></span>
+                <span class="controls__item"></span>
             </div>
+
     	</div>
-    </div>
+
+
+    </main>
+
+
+
     <footer class="main-footer">
-    	<div class="main-contacts">
+
+
+    	<div class="location" id="map">
+
 	    	<section class="contact-details">
-	    		<p>Остались вопросы?Свяжитесь с нами!</p>
-	    		<p>
+	    		<p class="contact-details__promo">Остались вопросы?Свяжитесь с нами!</p>
+	    		<p class="contact-details__content">
 	    			<span>Звоните:</span>
-	    			+7 (812) 555-66-66
-	    		</p>
-	    		<p>
+	    			+7 (812) 555-66-66<br>
 	    			<span>Пишите:</span>
-	    			mail@htmlacademy.ru
-	    		</p>
-	    		<p>
+	    			mail@htmlacademy.ru<br>
 	    			<span>Приезжайте в гости:</span>
 	    			ул. Большая Конюшенная, 19/8
 	    		</p>
 	    	</section>
+
 	    </div>
+
+
     </footer>
     <!-- <script src="js/script.js"></script> -->
 
