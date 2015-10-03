@@ -3,148 +3,137 @@
   <head>
     <meta charset="utf-8">
     <title>Pink. Стартовая</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="main-header">
-		<div class="main-logo">
-			<a href="index.html">
-				<img src="http://placehold.it/74x23" width="74" height="23">
-			</a>
-		</div>
-		<nav class="main-nav">
-			<ul>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Блог</a></li>
-				<li><a href="#">Отзывы</a></li>
-				<li><a href="#">Конкурс</a></li>
-			</ul>
-		</nav>
-        <a class="main-nav-btn" href="#"></a>
+      <div class="wrapper">
+        <div class="logo  logo--text">
+          <a href="index.html">
+            <img src="img/logo--text.png" width="74" height="23">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Блог</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+          </ul>
+          <a class="main-nav__toggle  main-nav__toggle-close" href="#"></a>
+        </nav>
+      </div>
     </header>
-    <div class="main-content">
-        <h1>Взгляните на жизнь иначе!</h1>
-    	<div class="app-download">
-    		<a class="btn" href="#">Скачать приложение</a>
-    		<div class="app-download-platform">
-    			<a href="#">
-    				<img src="http://placehold.it/46x57" width="46" height="57">
-    			</a>
-    			<a href="#">
-    				<img src="http://placehold.it/42x47" width="42" height="47">
-    			</a>
-    			<a href="#">
-    				<img src="http://placehold.it/46x57" width="46" height="57">
-    			</a>
-    		</div>
-    	</div>
-    	<section class="main-features">
-    		<div class="promo">
+
+    <main class="main-content">
+      <div class="main-content__header">
+        <h1 class="main-content__title">Взгляните на жизнь иначе!</h1>
+      	<div class="app-download">
+      		<a class="btn  btn--bord-white  btn--round" href="#">Скачать приложение</a>
+      		<div class="app-download__platform">
+      			<a class="app-download__link" href="#">
+      				<img src="http://placehold.it/46x57" width="46" height="57">
+      			</a>
+      			<a class="app-download__link" href="#">
+      				<img src="http://placehold.it/42x47" width="42" height="47">
+      			</a>
+      			<a class="app-download__link" href="#">
+      				<img src="http://placehold.it/46x57" width="46" height="57">
+      			</a>
+      		</div>
+      	</div>
+      </div>
+    	<div class="features">
+    		<div class="features__promo">
     			<p>Устали от серости мегаполиса?</p>
     			<p>Нам есть что Вам предложить!</p>
     		</div>
-    		<div class="feature-items">
-    			<section class="feature-item">
-    				<h2>Поднимает настроение</h2>
-    				<p>Приложение позволяет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+    		<div class="features__group">
+    			<section class="features__item">
+    				<h2 class="features__title">Поднимает настроение</h2>
+    				<p class="features__text">Приложение позволяет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
     			</section>
-    			<section class="feature-item">
-    				<h2>Меняет мир вокруг</h2>
-    				<p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+    			<section class="features__item">
+    				<h2 class="features__title">Меняет мир вокруг</h2>
+    				<p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
     			</section>
-    			<section class="feature-item">
-    				<h2>Заводит новых друзей</h2>
-    				<p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+    			<section class="features__item">
+    				<h2 class="features__title">Заводит новых друзей</h2>
+    				<p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
     			</section>
     		</div>
-    	</section>
+    	</div>
     	<div class="reviews">
-    		<figure class="review-item">
-    			<figcaption>Николай Петров</figcaption>
-    			"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+        <div class="reviews__content">
+    		<figure class="reviews__item">
+    			<figcaption class="reviews__descr">Николай Петров</figcaption>
+    			<p>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
     		</figure>
-    		<figure class="review-item">
-    			<figcaption>Николай Петров</figcaption>
-    			"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+    		<figure class="reviews__item">
+    			<figcaption class="reviews__descr">Николай Петров</figcaption>
+    			<p>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
     		</figure>
-    		<figure class="review-item">
-    			<figcaption>Николай Петров</figcaption>
-    			"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+    		<figure class="reviews__item">
+    			<figcaption class="reviews__descr">Николай Петров</figcaption>
+    			<p>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
     		</figure>
-            <div class="reviews-control">
-                <input type="radio" id="review1">
-                <input type="radio" id="review2">
-                <input type="radio" id="review3">
-                <label for="review1"></label>
-                <label for="review2"></label>
-                <label for="review3"></label>
-            </div>
+        </div>
+        <div class="controls controls--points">
+          <input type="radio" id="review1">
+          <input type="radio" id="review2">
+          <input type="radio" id="review3">
+          <label class="controls__item  controls__item--active" for="review1"></label>
+          <label class="controls__item" for="review2"></label>
+          <label class="controls__item" for="review3"></label>
+        </div>
     	</div>
     	<div class="main-price">
-    		<table>
-    			<tr>
-	    			<th>
-		    			<span>
-		    				База
-		    			</span>
-		    			1,99 USD
-	    			</th>
-	    			<th>
-	    				<span>
-	    					Стандарт
-	    				</span>
-	    				3,99 USD
-	    			</th>
-	    			<th>
-	    				<span>
-	    					Анлим
-	    				</span>
-	    				9,99 USD
-	    			</th>
+    		<table class="table  table--dark-head">
+    			<tr class="table__head-row">
+	    			<th class="table__head-cell">База<span class="table__price">1,99 USD</span></th>
+	    			<th class="table__head-cell"><span class="promo-stripe  promo-stripe--hit"></span>Стандарт<span class="table__price">3,99 USD</span></th>
+	    			<th class="table__head-cell">Анлим<span class="table__price">9,99 USD</span></th>
     			</tr>
     			<tr>
-	    			<td>Розовый фильтр</td>
-	    			<td>Розовый фильтр</td>
-	    			<td>Розовый фильтр</td>
+	    			<td>Розовый фильтр<i></i></td>
+	    			<td>Розовый фильтр<i></i></td>
+	    			<td>Розовый фильтр<i></i></td>
     			</tr>
     			<tr>
-	    			<td>Смайлики</td>
-	    			<td>Смайлики</td>
-	    			<td>Смайлики</td>
+	    			<td>Смайлики<i></i></td>
+	    			<td>Смайлики<i></i></td>
+	    			<td>Смайлики<i></i></td>
     			</tr>
     			<tr>
-	    			<td>Комментарии</td>
-	    			<td>Комментарии</td>
-	    			<td>Комментарии</td>
+	    			<td>Комментарии<i></i></td>
+	    			<td>Комментарии<i></i></td>
+	    			<td>Комментарии<i></i></td>
     			</tr>
     		</table>
-            <div class="price-controls">
-                <span class="price-controls-item"></span>
-                <span class="price-controls-item active"></span>
-                <span class="price-controls-item"></span>
-            </div>
+        <div class="controls  controls--points">
+            <span class="controls__item"></span>
+            <span class="controls__item  controls__item--active"></span>
+            <span class="controls__item"></span>
+        </div>
     	</div>
-    </div>
-    <footer class="main-footer">
-    	<div class="main-contacts">
-	    	<section class="contact-details">
-	    		<p>Остались вопросы?Свяжитесь с нами!</p>
-	    		<p>
-	    			<span>Звоните:</span>
-	    			+7 (812) 555-66-66
-	    		</p>
-	    		<p>
-	    			<span>Пишите:</span>
-	    			mail@htmlacademy.ru
-	    		</p>
-	    		<p>
-	    			<span>Приезжайте в гости:</span>
-	    			ул. Большая Конюшенная, 19/8
-	    		</p>
-	    	</section>
-	    </div>
-    </footer>
+      <div class="location">
+        <div class="contact-details">
+          <p class="contact-details__promo">Остались вопросы?Свяжитесь с нами!</p>
+          <p class="contact-details__content">
+            Звоните:
+            <span class="contact-details__item">+7 (812) 555-66-66</span><br>
+            Пишите:
+            <span class="contact-details__item">mail@htmlacademy.ru</span><br>
+            Приезжайте в гости:
+            <span class="contact-details__item">ул. Большая Конюшенная, 19/8</span>
+          </p>
+        </div>
+        <div class="map" id="map"></div>
+      </div>
+    </main>
+
     <!-- <script src="js/script.js"></script> -->
 
   </body>

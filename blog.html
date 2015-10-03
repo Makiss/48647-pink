@@ -7,86 +7,72 @@
   </head>
   <body>
 
-    <header class="main-header">
-		<div class="main-logo">
-			<a href="index.html">
-				<img src="http://placehold.it/74x23" width="74" height="23">
-			</a>
-		</div>
-		<nav class="main-nav">
-			<ul>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Блог</a></li>
-				<li><a href="#">Отзывы</a></li>
-				<li><a href="#">Конкурс</a></li>
-			</ul>
-		</nav>
-        <a class="main-nav-btn" href="#"></a>
-    </header>
-    <main class="main-content">
-        <h1>Блог путешественников, пользователей Пинк</h1>
-    	<section class="blog">
-            <article class="blog-post">
-                <h2>
-                    <a href="#">Антон и Надя в Тайланде</a>
-                </h2>
-                <p>Опубликовано: 6 месяцев назад</p>
-                <p>Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых туристических мест и районов.</p>
-            </article> 
-            <article class="blog-post">
-                <h2>
-                    <a href="#">Гастрольный тур "Кубанских борщеваров"</a>
-                </h2>
-                <p>Опубликовано: 5 лет назад</p>
-                <p>Возрождение культурных традиций уже не за горами. Фолк-металл-рэп-группа из столицы Кубани провела весь год в гастролях по России и ближнему (а также среднему) зарубежью.</p>
-            </article>   
-            <article class="blog-post">
-                <h2>
-                    <a href="#">Чета Болонских в Париже</a>
-                </h2>
-                <p>Опубликовано: 100 лет назад</p>
-                <p></p>
-            </article>   
-            <article class="blog-post">
-                <h2>
-                    <a href="#">Путешествие на яхте сеньора Христофора</a>
-                </h2>
-                <p>Опубликовано: 523 года назад</p>
-                <p>Группа испанцев отдыхала на яхте, но они даже не представляли, какие открытия ждут их впереди и чем это обернется для всего человечества!</p>
-            </article>     
-        </section>
-        <ul class="pagination">
-            <li class="pagination-item active">1</li>
-            <li><a class="pagination-item" href="#">2</a></li>
-            <li><a class="pagination-item" href="#">3</a></li>
-            <li><a class="pagination-item" href="#">4</a></li>
+   <header class="main-header">
+      <div class="logo  logo--text">
+        <a href="index.html">
+          <img src="http://placehold.it/74x23" width="74" height="23">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Блог</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
         </ul>
+        <a class="main-nav__toggle  main-nav__toggle-close" href="#"></a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="main-content__header">
+        <h1 class="main-content__title">Блог путешественников, пользователей Пинк</h1>
+      </div>
+    	<div class="blog-preview">
+        <article class="blog-preview__item">
+          <h2 class="blog-preview__title"><a href="#">Антон и Надя в Тайланде</a></h2>
+          <p class="date">Опубликовано: 6 месяцев назад</p>
+          <p class="blog-preview__content">Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых туристических мест и районов.</p>
+        </article> 
+        <article class="blog-preview__item">
+          <h2 class="blog-preview__title"><a href="#">Гастрольный тур "Кубанских борщеваров"</a></h2>
+          <p class="date">Опубликовано: 5 лет назад</p>
+          <p class="blog-preview__content">Возрождение культурных традиций уже не за горами. Фолк-металл-рэп-группа из столицы Кубани провела весь год в гастролях по России и ближнему (а также среднему) зарубежью.</p>
+        </article> 
+        <article class="blog-preview__item">
+          <h2 class="blog-preview__title"><a href="#">Чета Болонских в Париже</a></h2>
+          <p class="date">Опубликовано: 100 лет назад</p>
+          <p class="blog-preview__content">Невероятные приключения русских во Франции. Интриги, предательства, погони и, разумеется, убийства. Читайте криминально-исторический трактат в двух томах.</p>
+        </article> 
+        <article class="blog-preview__item">
+          <h2 class="blog-preview__title"><a href="#">Путешествие на яхте сеньора Христофора</a></h2>
+          <p class="date">Опубликовано: 523 года назад</p>
+          <p class="blog-preview__content">Группа испанцев отдыхала на яхте, но они даже не представляли, какие открытия ждут их впереди и чем это обернется для всего человечества!</p>
+        </article>  
+      </div>
+      <ul class="pagination">
+        <li class="pagination__item  pagination__item--active">1</li>
+        <li class="pagination__item"><a href="#">2</a></li>
+        <li class="pagination__item"><a href="#">3</a></li>
+        <li class="pagination-item"><a href="#">4</a></li>
+      </ul>
     </main>
-    <footer class="main-footer">
-        <section class="footer-logo">
-        	<figure>
-                    <a href="index.html">
-                        <img src="http://placehold.it/145x40" width="145" height="40">
-                    </a>
-            </figure>
-        </section>
-        <section class="social">
-            <a href="https://twitter.com/">
-                <i></i>
-            </a>
-            <a href="https://www.facebook.com/">
-                <i></i>
-            </a>
-            <a href="https://www.youtube.com/">
-                <i></i>
-            </a>
-        </section>
-        <section class="copyright">
-            Разработано
-            <a href="https://htmlacademy.ru/">
-                <i></i>
-            </a>
-        </section>
+
+   <footer class="main-footer">
+      <div class="logo  logo--image-text">
+        <a href="index.html">
+          <img src="http://placehold.it/145x40" width="145" height="40">
+        </a>
+      </div>
+      <div class="social">
+        <a class="social__item  social__item-tw" href="https://twitter.com/">Мы в Твиттере!</a>
+        <a class="social__item  social__item-fb" href="https://www.facebook.com/">Мы в Фейсбуке!</a>
+        <a class="social__item  social__item-yt" href="https://www.youtube.com/">Мы в Ютубе!</a>
+      </div>
+      <div class="main-footer__copyright">
+        Разработано
+        <a href="https://htmlacademy.ru/"><i></i></a>
+      </div>
     </footer>
 
     <!-- <script src="js/script.js"></script> -->
