@@ -1,0 +1,71 @@
+.controls-points {
+	margin-bottom: 45px;
+
+	&__item {
+		position: relative;
+		display: inline-block;
+		margin-right: 12px;
+		width: 12px;
+		height: 12px;
+		vertical-align: top;
+		border-radius: 50%;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -3px;
+			margin-left: -3px;
+			width: 6px;
+			height: 6px;
+			background-color: #bec2c7;
+			border-radius: 50%;
+		}
+	}
+}
+
+#btn1:checked ~ .controls-points label[for="btn1"],
+#btn2:checked ~ .controls-points label[for="btn2"],
+#btn3:checked ~ .controls-points label[for="btn3"] {
+	background-color: $base-color;
+
+	&::before {
+		background-color: $white;
+	}
+}	
+
+#btn1:checked ~ .reviews__content {
+	transform: translate(0);
+}
+
+#btn2:checked ~ .reviews__content {
+	transform: translate(-320px);
+}
+
+#btn3:checked ~ .reviews__content {
+	transform: translate(-640px);
+}
+
+#btn4:checked ~ .controls-points label[for="btn4"],
+#btn5:checked ~ .controls-points label[for="btn5"],
+#btn6:checked ~ .controls-points label[for="btn6"] {
+	background-color: $base-color;
+
+	&::before {
+		background-color: $white;
+	}
+}	
+
+#btn4:checked ~ .table--dark-head {
+	transform: translate(20px);
+}
+
+#btn5:checked ~ .table--dark-head {
+	transform: translate(-260px);
+}
+
+#btn6:checked ~ .table--dark-head {
+	transform: translate(-540px);
+}

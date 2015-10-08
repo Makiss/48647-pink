@@ -1,0 +1,11 @@
+.main-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 20px;
+	padding-bottom: 22px;
+	width: 100%;
+	background-color: rgba(29, 38, 49, 0.3);
+	box-shadow: 0 1px $black;
+	@include clearfix;
+}

@@ -1,0 +1,66 @@
+.table {
+	margin-bottom: 40px;
+	width: 276px*3 + 2px*4;
+	line-height: 30px;
+	text-transform: uppercase;
+	border-collapse: collapse;
+
+	&__head-cell {
+		padding-top: 19px;
+		padding-bottom: $distance;
+		width: 276px; 
+		font-weight: $text--bold;
+		font-size: 18px;
+		text-align: center;
+		@include border($width: $border-width, $color: $border-gray);
+		border-top: none;
+		border-bottom: none;
+
+		&--hit {
+			position: relative;
+			overflow: hidden;
+
+			&::before {
+				content: "Хит";
+				display: block;
+				position: absolute;
+				top: 10px;
+				left: -25px;
+				width: 105px;
+				height: 30px;
+				font-weight: $text--semibold;
+				font-size: 14px;
+				line-height: $line-height + 3px;
+				color: $white;
+				text-align: center;
+				text-transform: uppercase;
+				background-color: $pink;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
+	&__price {
+		font-weight: text--light;
+		font-size: 24px;
+	}
+
+	td {
+		position: relative;
+		padding-left: 22px;
+		padding-right: 18px;
+		padding-top: 14px;
+		padding-bottom: 15px;
+		text-align: left;
+		@include border($width: $border-width, $color: $border-gray);
+		border-top: none;
+		background-color: #ffffff;
+	}
+
+	&--dark-head {
+		th {
+			color: $white;
+			background-color: $base-color;
+		}
+	}
+}

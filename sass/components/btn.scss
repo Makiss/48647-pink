@@ -1,0 +1,45 @@
+.btn {
+	display: inline-block;
+	padding: ($distance - 3px) $distance;
+	width: 100%;
+	font-weight: $text--bold;
+	font-size: $font-size--link;
+	line-height: $line-height--btn;
+	text-align: center;
+	vertical-align: top;
+	border-radius: 2px;
+
+	&--bord-white {
+		margin-bottom: $distance + 10px;
+		line-height: 18px;
+		text-transform: none;
+		border-radius: 35px;
+		@include border(($border-width + 1px), $color: $white);
+	}
+
+	&--bord-gray {
+		margin-bottom: $distance;
+		font-weight: $text--bold;
+		font-size: $font-size--link;
+		color: $base-color;
+		background-color: $white;
+		@include border();
+	}
+
+	&--small {
+		margin-right: $distance;
+		width: 130px;
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+	}
+
+	&--bg-green {
+		color: $white;
+		text-transform: uppercase;
+		background-color: $btn-green;
+		@include border($color: $btn-green);
+	}
+
+}
