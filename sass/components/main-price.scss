@@ -1,0 +1,23 @@
+.main-price {
+	position: relative;
+	margin-top: 22px;
+	padding-top: 67px;
+	padding-bottom: 2px;
+	background-color: $bg-gray;
+
+	input {
+		display: none;
+	}
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: -25px;
+		width: 100%;
+		height: 25px;
+		background-image: url("../img/bg-price--oblique.png");
+		background-repeat: no-repeat;
+		background-size: 100% 25px;
+	}
+}

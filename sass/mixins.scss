@@ -1,0 +1,20 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin border($width: 2px, $style: solid, $color: $border-gray) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}
+
+@mixin sprite ($x, $y, $width, $height) {
+	background-position: $x $y;
+	width: $width;
+	height: $height;
+}

@@ -1,0 +1,35 @@
+.reviews {
+	padding-top: 45px;
+	overflow: hidden;
+
+	input {
+		display: none;
+	}
+
+	&__content {
+		width: 960px;
+		@include clearfix;
+	}
+
+	&__item {
+		float: left;
+		margin: 0;
+		padding-left: $distance;
+		padding-right: $distance;
+		width: 320px;
+
+		p {
+			margin: 0;
+			margin-bottom: 30px;
+			line-height: $line-height--btn;
+		}
+	}
+
+	&__descr {
+		margin-bottom: 16px;
+		font-weight: $text--bold;
+		font-size: 18px;
+		line-height: $line-height--btn;
+		color: $black;
+	}	
+}

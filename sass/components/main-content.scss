@@ -1,0 +1,37 @@
+.main-content {
+
+	&__header {
+		padding-top: 85px;
+		padding-bottom: 1px;
+		background-color: $base-color;
+		background-image: url("../img/main-content__header--bg.jpg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center top;
+
+		&--more-bg {
+			padding-bottom: 0;
+			background-image: url("../img/hand-with-phone.png"),
+							  url("../img/phone-background.jpg"),
+							  url("../img/main-content__header--bg.jpg");
+			background-size: auto,
+						 	 auto,
+						 	 100%;
+			background-position: 0 173px,
+							 	 105px 205px,
+							 	 center top;
+		}
+	}
+
+	&__title {
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 47px;
+		width: 225px;
+		font-weight: $text--light;
+		font-size: 24px;
+		line-height: 34px;
+		color: $white;
+	}
+}

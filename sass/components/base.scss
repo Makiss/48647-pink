@@ -1,0 +1,73 @@
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: $font-family;
+	font-weight: $text--normal;
+	font-size: $font-size;
+	line-height: $line-height;
+	color: $base-color;
+	text-align: center;
+}
+
+h1 {
+	font-weight: $text--light;
+	font-size: $font-size + 10px;
+	line-height: $line-height - 3px;
+	color: $white;
+}
+
+h2 {
+	font-weight: $text--bold;
+	font-size: $font-size + 4px;
+	line-height: $line-height - 3px;
+	color: $black;
+
+	a {
+		color: $base-color;
+		text-transform: none;
+	}
+}
+
+h3 {
+	font-weight: $text--bold;
+	font-size: $font-size + 4px;
+	line-height: $line-height + 3px;
+	color: $base-color;
+}
+
+a {
+	font-weight: $text--bold;
+	font-size: $font-size--link;
+	color: $white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+input {
+	font-size: $font-size + 4px;
+}
+
+label {
+	color: $pink;
+	text-transform: uppercase;
+}
+
+.wrapper {
+	padding: 0 $distance;
+	width: 100%;
+}
+
