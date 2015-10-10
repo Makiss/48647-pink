@@ -1,6 +1,6 @@
 .form-content {
 	padding-top: 47px;
-	line-height: $line-height + 3px;
+	line-height: $line-height--large;
 
 	&__promo {
 		margin: 0;
@@ -17,64 +17,17 @@
 		padding-left: $distance;
 		padding-right: $distance;
 		padding-bottom: 45px;
-		padding-top: 42px;
+		padding-top: 40px;
 		border: none;
 
-		&:last-of-type {
-			padding-bottom: 36px;
-		}
-
 		&--gray {
-			padding-top: 32px;
 			background-color: $bg-gray;
 		}
 
-		&--user-data {
-
-			label {
-				text-align: left;
-				margin-bottom: 7px;
-				padding-left: 23px;
-			}
-
-			div {
-				margin-bottom: 18px;
-			
-				&:last-of-type {
-					margin-bottom: 0;
-				}
-			}
-		}
-
-		&--app-choice {
-
-			div {
-				text-align: left;
-				margin-bottom: 45px;
-			
-				&:last-child {
-					margin-bottom: 0;
-				}
-			}
-		}
-
 		&--travel-date {
-
-			div {
-				margin-bottom: 16px;
-				
-				&:last-of-type {
-					margin-bottom: 0;
-				}
-			}
-
 			input {
 				margin-bottom: 10px;
 			}
-		}
-
-		&--upload {
-			padding-bottom: 6px;
 		}
 	}
 
@@ -82,87 +35,51 @@
 		margin: 0;
 		margin-bottom: 35px;
 		font-weight: $text--normal;
-		font-size: $font-size;
-		line-height: $line-height--btn;
+		font-size: $font-size--small;
+		line-height: $line-height--large;
 		color: $pink;
 		text-transform: uppercase;
 	}
 
-	&__fellow-data {
-		margin-bottom: 38px;
+	&__field {
+		position: relative;
+		margin-bottom: 30px;
 
 		&:last-of-type {
-			margin: 0;
+			margin-bottom: 0;
 		}
-
-		label {
-			margin-bottom: 7px;
-		}
-	}
-
-	&__field {
-			position: relative;
-
 
 		&--fellows-number {
-			margin-bottom: 30px;
 			padding-bottom: 48px;
 			border-bottom: 2px solid $border-gray;
 		}
 
-		&--fellow-name {
-			margin-bottom: 18px;
-
-			input {
-				padding-left: 83px;
-			}
-
-			label {
-				padding-left: 26px;
-				text-align: left;
-			}
-
-			span {
-				margin-right: 46px;
-			}
+		&--fellows-data {
+			@include clearfix();
 		}
 
-		&--fellow-nickname {
-
-			input,
-			label {
-				margin-left: 61px;
-				width: calc(100% - 61px);
-			}
-
-			label {
-				padding-left: 25px;
-				text-align: left;
-			}
-		}
-
-		&--checkbox {
-			margin-bottom: 52px;
-
-			&:last-of-type {
-				margin-bottom: 0;
-			}
+		&--col {
+			float: left;
 		}
 	}
 
 	&__index-number {
-		display: inline-block;
-		position: absolute;
-		top: 39px;
-		left: 2px;
+		display: block;
 		padding: 16px;
 		width: 61px;
-		height: 59px;
-		font-size: $font-size--link;
-		line-height: $line-height--btn;
+		height: 63px;
+		font-size: $font-size--medium;
+		line-height: $line-height--large;
 		vertical-align: top;
 		background-color: $bg-gray;
-		border-right: 2px solid $border-gray;
+		border-radius: 2px 0 0 2px;
+		@include border();
+		border-right: none;
+	}
+
+	&__number-symbol {
+		display: block;
+		margin-bottom: 5px;
 	}
 
 	&__plus,
@@ -225,8 +142,8 @@
 		padding-top: 14.5px;
 		padding-bottom: 14.5px;
 		width: 100%;
-		font-size: $font-size--link;
-		line-height: $line-height--btn;
+		font-size: $font-size--medium;
+		line-height: $line-height--large;
 		border-radius: 2px;
 		@include border();
 
@@ -235,48 +152,68 @@
 			padding-left: 80px;
 			text-align: center;
 		}
+
+		&--checkbox,
+		&--radio,
+		&--file {
+			display: none;
+		}
+
+		&--with-index {
+			border-radius: 0 2px 2px 0;
+		}
 	}
 
 	&__label {
 		display: block;
-	}
 
-	&__label--checkbox,
-	&__label--radio {
-		font-size: $font-size--link;
-		color: $base-color;
-		text-transform: none;
-	}
-
-	&__label--radio {
-		position: relative;
-		padding-left: 61px;
-
-		&::before,
-		&::after {
-			content: "";
-			display: block;
-			position: absolute;
-
-			top: 50%;
-			border-radius: 50%;
-			cursor: pointer
+		&--person-data {
+			margin-bottom: 5px;
+			padding-left: 25px;
+			text-align: left;
 		}
 
-		&::before {
-			left: 0;
-			margin-top: -19.5px;
-			width: 39px;
-			height: 39px;
-			background-color: $white;
-			@include border();
+		&--checkbox,
+		&--radio {
+			position: relative;
+			padding-left: 60px;
+			font-size: $font-size--medium;
+			color: $base-color;
+			text-align: left;
+			text-transform: none;
 		}
 
-		&::after {
-			left: 12px;
-			margin-top: -7.5px;
-			width: 15px;
-			height: 15px;
+		&--radio {
+			&::before,
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 50%;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+
+			&::before {
+				left: 0;
+				margin-top: -19.5px;
+				width: 39px;
+				height: 39px;
+				background-color: $white;
+				@include border();
+			}
+
+			&::after {
+				left: 12px;
+				margin-top: -7.5px;
+				width: 15px;
+				height: 15px;
+			}
+		}
+
+		&--left-offset {
+			margin-left: 61px;
+			width: calc(100% - 61px);
 		}
 	}
 
@@ -284,18 +221,6 @@
 		&::after {
 			background-color: $pink;
 		}
-	}
-
-	&__item--checkbox,
-	&__item--radio,
-	input[type="file"] {
-		display: none;
-	}
-
-	&__label--checkbox {
-		position: relative;
-		padding-left: 60px;
-		text-align: left;
 	}
 
 	&__check-field {
@@ -324,12 +249,7 @@
 		}
 	}
 
-	#shark-selfy:checked ~ label[for="shark-selfy"] .icon--check,
-	#sunburned:checked ~ label[for="sunburned"] .icon--check,
-	#chuck-norris:checked ~ label[for="chuck-norris"] .icon--check,
-	#souvenir:checked ~ label[for="souvenir"] .icon--check,
-	#tower:checked ~ label[for="tower"] .icon--check,
-	#hotel-crash:checked ~ label[for="hotel-crash"] .icon--check {
+	&__item--checkbox:checked + &__label--checkbox .icon--check {
 		display: block;
 	}
 
@@ -356,8 +276,8 @@
 	}
 
 	&__uploaded-descr {
-		font-size: 12px;
-		line-height: 18px;
+		font-size: 1.2rem;
+		line-height: 1.8;
 		text-transform: uppercase;
 	}
 
