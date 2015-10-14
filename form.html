@@ -36,21 +36,21 @@
         <div class="form-content">
         	<p class="form-content__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
             <form class="form" action="/echo" method="get" enctype="multipart/formdata">
-              <fieldset class="form__fieldset  form__fieldset--user-data">
+              <fieldset class="form__fieldset">
                 <div class="form__field">
-                  <label class="form__label" for="first-name">Имя:*</label>
-                  <input class="form__item  form__item--text" type="text" name="first-name" id="first-name" value="Введите ваше имя" required autofocus>
+                  <label class="form__label  form__label--person-data" for="first-name">Имя:*</label>
+                  <input class="form__item  form__item--text" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя" required autofocus>
                 </div>
                 <div class="form__field">
-                  <label class="form__label" for="last-name">Фамилия:*</label>
-                  <input class="form__item  form__item--text" type="text" name="last-name" id="last-name" value="Укажите фамилию" required>
+                  <label class="form__label  form__label--person-data" for="last-name">Фамилия:*</label>
+                  <input class="form__item  form__item--text" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию" required>
                 </div>
                 <div class="form__field">
-                  <label class="form__label" for="patronymic">Отчество:*</label>
-                  <input class="form__item  form__item--text" type="text" name="patronymic" id="patronymic" value="Ну и отчество тоже">
+                  <label class="form__label  form__label--person-data" for="patronymic">Отчество:*</label>
+                  <input class="form__item  form__item--text" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
                 </div>
               </fieldset>
-              <fieldset class="form__fieldset  form__fieldset--gray  form__fieldset--app-choice">
+              <fieldset class="form__fieldset  form__fieldset--gray">
                 <h3 class="form__subtitle">С каким приложением путешествовали?*</h3>
                 <div class="form__field">
                   <input class="form__item--radio" type="radio" name="app-survey" id="iOS" value="iOS" required>
@@ -68,41 +68,53 @@
               <fieldset class="form__fieldset  form__fieldset--travel-date">
                 <h3 class="form__subtitle">Когда вы путешествовали?*</h3>
                 <div class="form__field">
-                  <input class="form__item  form__item--text" type="text" name="travelling-beginning" id="travelling-beginning" value="1 апреля 2015 года" required>
+                  <input class="form__item  form__item--text" type="text" name="travelling-beginning" id="travelling-beginning" placeholder="1 апреля 2015 года" required>
                   <label class="form__label" for="travelling-beginning">Дата выезда</label>
                 </div>
-                <div class="form__field form__field--days-number">
-                  <span class="form__minus"></span><input class="form__item  form__item--number" type="text" name="travelling-duration" id="travelling-duration" value="10 дней" required><span class="form__plus"></span>
+                <div class="form__field">
+                  <span class="form__minus"></span><input class="form__item  form__item--number" type="text" name="travelling-duration" id="travelling-duration" placeholder="10 дней" required><span class="form__plus"></span>
                   <label class="form__label" for="travelling-duration">Продолжительность</label>
                 </div>
                 <div class="form__field">
-                  <input class="form__item  form__item--text" type="text" name="travelling-end" id="travelling-end" value="1 апреля 2015 года" required disabled>
+                  <input class="form__item  form__item--text" type="text" name="travelling-end" id="travelling-end" placeholder="1 апреля 2015 года" required disabled>
                   <label class="form__label" for="travelling-end">Дата возвращения</label>
                 </div>
               </fieldset>
-              <fieldset class="form__fieldset  form__fieldset--gray  form__fieldset--travel-fellow">
+              <fieldset class="form__fieldset  form__fieldset--gray">
                 <h3 class="form__subtitle">Количество попутчиков*</h3>
                 <div class="form__field  form__field--fellows-number">
-                  <input class="form__item  form__item--number" type="text" name="fellow-traveler-number" id="fellow-traveler-number" value="2 чел" required disabled><span class="form__minus"></span><span class="form__plus"></span>
+                  <input class="form__item  form__item--number" type="text" name="fellow-traveler-number" id="fellow-traveler-number" placeholder="2 чел" required disabled><span class="form__minus"></span><span class="form__plus"></span>
                 </div>
-                <div class="form__fellow-data">
-                  <div class="form__field  form__field--fellow-name">
-                    <label class="form__label" for="fellow-traveler1-name"><span>№</span> Имя*</label>
-                    <input class="form__item  form__item--text" type="text" name="fellow-traveler1-name" id="fellow-traveler1-name" value="Введите ваше имя" required><span class="form__index-number">1</span>
+                <div class="form__field  form__field--fellows-data">
+                  <div class="form__field  form__field--col  form__field--index-number-col">
+                    <span class="form__number-symbol">№</span>
+                    <span class="form__index-number">1</span>
                   </div>
-                  <div class="form__field  form__field--fellow-nickname">
-                    <label class="form__label" for="fellow-traveler1-nickname">Прозвище:</label>
-                    <input class="form__item  form__item--text" type="text" name="fellow-traveler1-nickname" id="fellow-traveler1-nickname" value="Ну как же без этого!">
+                  <div class="form__field  form__field--col">
+                    <div class="form__field">
+                      <label class="form__label  form__label--person-data" for="fellow-traveler1-name">Имя*</label>
+                      <input class="form__item  form__item--text  form__item--with-index" type="text" name="fellow-traveler1-name" id="fellow-traveler1-name" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="form__field">
+                      <label class="form__label  form__label--person-data" for="fellow-traveler1-nickname">Прозвище:</label>
+                      <input class="form__item  form__item--text" type="text" name="fellow-traveler1-nickname" id="fellow-traveler1-nickname" placeholder="Ну как же без этого!">
+                    </div>
                   </div>
                 </div>
-                <div class="form__fellow-data">
-                  <div class="form__field  form__field--fellow-name">
-                    <label class="form__label" for="fellow-traveler2-name"><span>№</span> Имя*</label>
-                    <input class="form__item  form__item--text" type="text" name="fellow-traveler2-name" id="fellow-traveler2-name" value="Введите ваше имя" required><span class="form__index-number">2</span>
+                <div class="form__field  form__field--fellows-data">
+                  <div class="form__field  form__field--col  form__field--index-number-col">
+                    <span class="form__number-symbol">№</span>
+                    <span class="form__index-number">2</span>
                   </div>
-                  <div class="form__field  form__field--fellow-nickname">
-                    <label class="form__label" for="fellow-traveler2-nickname">Прозвище:</label>
-                    <input class="form__item  form__item--text" type="text" name="fellow-traveler2-nickname" id="fellow-traveler2-nickname" value="Ну как же без этого!">
+                  <div class="form-field  form__field--col">
+                    <div class="form__field">
+                      <label class="form__label  form__label--person-data" for="fellow-traveler2-name">Имя*</label>
+                      <input class="form__item  form__item--text  form__item--with-index" type="text" name="fellow-traveler2-name" id="fellow-traveler2-name" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="form__field">
+                      <label class="form__label  form__label--person-data" for="fellow-traveler2-nickname">Прозвище:</label>
+                      <input class="form__item  form__item--text" type="text" name="fellow-traveler2-nickname" id="fellow-traveler2-nickname" placeholder="Ну как же без этого!">
+                    </div>
                   </div>
                 </div>
               </fieldset>
@@ -133,11 +145,11 @@
                   <label class="form__label  form__label--checkbox" for="hotel-crash"><span class="form__check-field"><i class="icon  icon--check"></i></span>Разгромил отель</label>
                 </div>
               </fieldset>
-              <fieldset class="form__fieldset  form__fieldset--gray  form__fieldset--upload">
+              <fieldset class="form__fieldset  form__fieldset--gray">
                 <h3 class="form__subtitle">Ваши фотографии из поездки*</h3>
-                <label class="btn btn--bord-gray">
+                <label class="btn  btn--bord-gray">
                   Загрузить фото
-                  <input type="file" name="photo" value="Загрузить фото" required>
+                  <input class="form__item  form__item--file" type="file" name="photo" value="Загрузить фото" required>
                 </label>
                 <div class="form__upload-area">
                   <div class="form__uploaded-file">

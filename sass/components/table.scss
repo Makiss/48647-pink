@@ -1,7 +1,7 @@
 .table {
 	margin-bottom: 40px;
 	width: 276px*3 + 2px*4;
-	line-height: 30px;
+	line-height: $line-height--large;
 	text-transform: uppercase;
 	border-collapse: collapse;
 
@@ -10,7 +10,7 @@
 		padding-bottom: $distance;
 		width: 276px; 
 		font-weight: $text--bold;
-		font-size: 18px;
+		font-size: $font-size--medium;
 		text-align: center;
 		@include border($width: $border-width, $color: $border-gray);
 		border-top: none;
@@ -29,8 +29,8 @@
 				width: 105px;
 				height: 30px;
 				font-weight: $text--semibold;
-				font-size: 14px;
-				line-height: $line-height + 3px;
+				font-size: $font-size--small;
+				line-height: $line-height--large;
 				color: $white;
 				text-align: center;
 				text-transform: uppercase;
@@ -42,7 +42,7 @@
 
 	&__price {
 		font-weight: text--light;
-		font-size: 24px;
+		font-size: $font-size--large;
 	}
 
 	td {

@@ -3,15 +3,15 @@
 	padding: ($distance - 3px) $distance;
 	width: 100%;
 	font-weight: $text--bold;
-	font-size: $font-size--link;
-	line-height: $line-height--btn;
+	font-size: $font-size--medium;
+	line-height: $line-height--large;
 	text-align: center;
 	vertical-align: top;
 	border-radius: 2px;
 
 	&--bord-white {
 		margin-bottom: $distance + 10px;
-		line-height: 18px;
+		line-height: 1.8rem;
 		text-transform: none;
 		border-radius: 35px;
 		@include border(($border-width + 1px), $color: $white);
@@ -20,7 +20,7 @@
 	&--bord-gray {
 		margin-bottom: $distance;
 		font-weight: $text--bold;
-		font-size: $font-size--link;
+		font-size: $font-size--medium;
 		color: $base-color;
 		background-color: $white;
 		@include border();

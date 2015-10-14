@@ -21,15 +21,15 @@
 		p {
 			margin: 0;
 			margin-bottom: 30px;
-			line-height: $line-height--btn;
+			line-height: $line-height--large;
 		}
 	}
 
 	&__descr {
 		margin-bottom: 16px;
 		font-weight: $text--bold;
-		font-size: 18px;
-		line-height: $line-height--btn;
+		font-size: $font-size--medium;
+		line-height: $line-height--large;
 		color: $black;
 	}	
 }

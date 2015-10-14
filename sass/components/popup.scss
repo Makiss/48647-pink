@@ -1,4 +1,5 @@
 .popup {
+	display: none;
 	position: absolute;
 	width: 320px;
 	left: 50%;
@@ -6,7 +7,7 @@
 	padding-top: 42px;
 
 	
-	line-height: $line-height - 3px;
+	line-height: $line-height--small;
 	text-align: center;
 	background-color: $white;
 	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
@@ -30,7 +31,7 @@
 		margin: 0;
 		margin-bottom: 30px;
 		font-weight: $text--bold;
-		font-size: $font-size--link;
+		font-size: $font-size--medium;
 	}
 
 	&__message {

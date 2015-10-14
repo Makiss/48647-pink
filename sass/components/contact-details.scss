@@ -1,13 +1,13 @@
 .contact-details {
 	position: relative;
 	padding-top: 45px;
-	line-height: 30px;
+	line-height: $line-height--large;
 
 	&__promo {
 		margin-top: 0;
 		margin-bottom: 37px;
-		font-weight: 300;
-		font-size: 24px;
+		font-weight: $text--light;
+		font-size: $font-size--large;
 	}
 
 	&__content {
@@ -15,15 +15,15 @@
 		z-index: 5;
 		margin-top: 0;
 		margin-bottom: 18px;
-		font-weight: 700;
-		font-size: 18px;
+		font-weight: $text--bold;
+		font-size: $font-size--medium;
 	}
 
 	&__item {
 		display: block;
 		margin-bottom: 20px;
-		font-weight: 300;
-		font-size: 24px;
+		font-weight: $text--light;
+		font-size: $font-size--large;
 		color: #d22856;
 	}
 
