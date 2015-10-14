@@ -13,5 +13,8 @@
 		text-indent: -9999px;
 	}
 
-
+	@media (min-width: 700px) {
+		float: left;
+		margin-bottom: 0;
+	}
 }

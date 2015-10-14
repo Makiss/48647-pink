@@ -2,10 +2,18 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding-top: 20px;
+	padding-top: $distance;
 	padding-bottom: 22px;
+	padding-left: $distance;
+	padding-right: $distance;
 	width: 100%;
-	background-color: rgba(29, 38, 49, 0.3);
-	box-shadow: 0 1px $black;
+	background-color: rgba(29, 38, 49, 0.4);
 	@include clearfix;
+
+	@media (min-width: 700px) {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 26px;
+		padding-bottom: 42px;
+	}
 }

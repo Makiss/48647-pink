@@ -5,4 +5,15 @@
 	&__copyright {
 		margin-bottom: 30px;
 	}
+
+	@media (min-width: 700px) {
+		padding-bottom: 72px;
+
+		&__copyright {
+			float: right;
+			margin-bottom: 0;
+			margin-top: 5px;
+		}
+
+	}
 }
