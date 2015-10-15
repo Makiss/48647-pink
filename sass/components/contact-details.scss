@@ -19,6 +19,14 @@
 		font-size: $font-size--medium;
 	}
 
+	&__field {
+		position: relative;
+		z-index: 10;
+		margin-left: auto;
+		margin-right: auto;
+		width: 240px;
+	}
+
 	&__item {
 		display: block;
 		margin-bottom: 20px;
@@ -31,12 +39,66 @@
 		content: "";
 		display: block;
 		position: absolute;
-		bottom: -52px;
-		left: -20px;
+		bottom:: -35px;
+		left: 0;
 		width: 100%;
 		height: 123px;
-		background-image: url("../img/map__overlay.png");
+		background-image: url("../img/map__overlay--mobile.png");
 		background-repeat: no-repeat;
 		background-size: 100% 123px;
+	}
+
+	@media (min-width: 700px) {
+
+		&__promo {
+			margin-bottom: 52px;
+			font-size: 4rem;
+			line-height: 4rem;
+		}
+
+		&__content {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		&__field {
+
+			&--phone {
+				float: left;
+			}
+
+			&--email {
+				float: right;
+			}
+
+			&--address {
+				clear: both;
+			}
+		}
+
+		&::after {
+			bottom: -70px;
+			background-image: url("../img/map__overlay--tablet.png");
+		}
+	}
+
+	@media (min-width: 980px) {
+		&__promo {
+			margin-bottom: 67px;
+			font-size: 5rem;
+			line-height: 5rem;
+		}
+
+		&__field {
+
+			&--address {
+				clear: none;
+			}
+		}
+
+		&::after {
+			bottom: -123px;
+			background-image: url("../img/map__overlay--desktop.png");
+		}
 	}
 }

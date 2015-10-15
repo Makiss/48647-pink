@@ -73,6 +73,10 @@ label {
 	width: 100%;
 	@include clearfix();
 
+	&--form {
+		padding: 0;
+	}
+
 	@media (min-width: 700px) {
 		padding-left: 40px;
 		padding-right: 40px;

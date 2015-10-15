@@ -1,5 +1,6 @@
 .facts {
-	padding-top: 90px;
+	display: none;
+	padding-top: 85px;
 	padding-bottom: 85px;
 
 	.wrapper {
@@ -11,6 +12,7 @@
 			position: absolute;
 			right: 55%;
 			top: 50%;
+			margin-top: -151px;
 			width: 262px;
 			height: 302px;
 			background-image: url("../img/clock.png");
@@ -19,6 +21,7 @@
 
 	&__item {
 		margin-left: 50%;
+		text-align: left;
 	}
 
 	&__title {
@@ -43,5 +46,25 @@
 		color: $pink;
 		text-decoration: underline;
 		text-transform: none;
+	}
+
+	@media (min-width: 700px) {
+		display: block;
+	}
+
+	@media (min-width: 980px) {
+		background-color: $bg-gray;
+
+		&__item {
+			margin-left: 365px;
+			width: 540px;
+		}
+
+		.wrapper {
+			&:before {
+				left: 0;
+				top: 35%;
+			}
+		}
 	}
 }

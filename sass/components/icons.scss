@@ -1,11 +1,8 @@
 .icon {
 	display: block;
 	position: absolute;
-	right: 18px;
-	top: 50%;
 
 	&--check {
-		margin-top: -11px;
 		width: 29px;
 		height: 22px;
 		transform: rotate(-45deg);
@@ -35,7 +32,6 @@
 	}
 
 	&--cross {
-		margin-top: -13px;
 		width: 26px;
 		height: 26px;
 

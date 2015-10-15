@@ -7,16 +7,15 @@
 	}
 
 	&__content {
-		width: 960px;
+		width: 300%;
 		@include clearfix;
 	}
 
 	&__item {
+		position: relative;
 		float: left;
 		margin: 0;
-		padding-left: $distance;
-		padding-right: $distance;
-		width: 320px;
+		width: 33.3%;
 
 		p {
 			margin: 0;
@@ -31,5 +30,61 @@
 		font-size: $font-size--medium;
 		line-height: $line-height--large;
 		color: $black;
-	}	
+
+		span {
+			display: none;
+		}
+	}
+
+	@media (min-width: 700px) {
+		&__item {
+			padding-bottom: 100px;
+		}
+
+		&__descr {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -200px;
+			margin-bottom: 40px;
+			width: 400px;
+			font-size: 2rem;
+			text-align: center;
+
+			span {
+				display: inline;
+				font-weight: $text--normal;
+				font-size: $font-size--small;
+			}
+		}
+	}
+
+	@media (min-width: 980px) {
+		position: relative;
+		padding-top: 190px;
+
+		&:before {
+			content: "“";
+			display: block;
+			position: absolute;
+			top: 50px;
+			left: 50%;
+			margin-left: -39px;
+			width: 78px;
+			line-height: 240px;
+			font-family: Georgia, serif;
+			font-size: 240px;
+			color: #efefef;
+		}
+
+		&__item {
+			padding-left: 130px;
+			padding-right: 130px;
+		}
+
+		.controls-points {
+			display: none;
+		}
+	}
+
 }

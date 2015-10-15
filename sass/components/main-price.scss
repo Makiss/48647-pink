@@ -20,4 +20,11 @@
 		background-repeat: no-repeat;
 		background-size: 100% 33px;
 	}
+
+	
+	@media (min-width: 700px) {
+		.controls-points {
+			display: none;
+		}
+	}
 }

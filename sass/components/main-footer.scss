@@ -2,12 +2,21 @@
 	padding-top: 32px;
 	padding-bottom: 16px;
 
+	&--index {
+		display: none;
+	}
+
 	&__copyright {
 		margin-bottom: 30px;
 	}
 
 	@media (min-width: 700px) {
-		padding-bottom: 72px;
+		padding-top: 35px;
+		padding-bottom: 35px;
+
+		&--index {
+			display: block;
+		}
 
 		&__copyright {
 			float: right;
@@ -15,5 +24,10 @@
 			margin-top: 5px;
 		}
 
+	}
+
+	@media (min-width: 980px) {
+		padding-top: 73px;
+		padding-bottom: 73px;
 	}
 }

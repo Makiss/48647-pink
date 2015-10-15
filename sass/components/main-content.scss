@@ -13,8 +13,7 @@
 			padding-bottom: 0;
 
 			.wrapper {
-				padding-left: 0;
-				padding-right: 0;
+				padding: 0;
 				background-image: url("../img/iphone-hand-mobile.png");
 				background-repeat: no-repeat;
 				background-position: 0 86px;
@@ -32,14 +31,16 @@
 				padding-bottom: 0;
 
 	        .wrapper {
+	        	padding-left: 40px;
+				padding-right: 40px;
 	        	background-image: url("../img/iphone-hand-tablet@1x.png");
 	        	background-repeat: no-repeat;
-						background-position: right 0 top 0;
+				background-position: right 0 top 0;
 	        }
 
 	        .main-content__title {
-					margin: 0;
-					margin-bottom: 25px;
+				margin: 0;
+				margin-bottom: 25px;
 			    padding-top: 20px;
 			    padding-left: 40px;
 			    padding-right: 40px;
@@ -56,6 +57,10 @@
 
 			&--more-bg {
 				padding-bottom: 0;
+
+				.wrapper {
+					padding: 0;
+				}
 			}
 		}
 	}
