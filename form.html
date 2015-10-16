@@ -5,17 +5,14 @@
     <title>Pink. Стартовая</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize-mini.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="main-header">
       <div class="wrapper">
-        <div class="logo  logo--text">
-          <a href="index.html">
-            <img src="img/logo--text.png" width="74" height="23">
-          </a>
+        <div class="logo  logo--header">
+          <a href="index.html"></a>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -33,188 +30,201 @@
       <div class="main-content__header">
           <h1 class="main-content__title">Конкурс на самое обезбашенное путешествие с Пинк</h1>
       </div>
+      <div class="wrapper  wrapper--form">
         <div class="form-content">
         	<p class="form-content__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-            <form class="form" action="/echo" method="get" enctype="multipart/formdata">
-              <fieldset class="form__fieldset">
-                <div class="form__field">
-                  <label class="form__label  form__label--person-data" for="first-name">Имя:*</label>
-                  <input class="form__item  form__item--text" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя" required autofocus>
+          <form class="form" action="/echo" method="get" enctype="multipart/formdata">
+            <fieldset class="form__fieldset  form__fieldset--user-data">
+              <div class="form__field">
+                <label class="form__label  form__label--person-data" for="first-name">Имя:*</label>
+                <input class="form__item  form__item--text" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя" required autofocus>
+              </div>
+              <div class="form__field">
+                <label class="form__label  form__label--person-data" for="last-name">Фамилия:*</label>
+                <input class="form__item  form__item--text" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию" required>
+              </div>
+              <div class="form__field">
+                <label class="form__label  form__label--person-data" for="patronymic">Отчество:*</label>
+                <input class="form__item  form__item--text" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset  form__fieldset--gray  form__fieldset--radio">
+              <legend>С каким приложением путешествовали?*</legend>
+              <h3 class="form__subtitle">С каким приложением путешествовали?*</h3>
+              <div class="form__field">
+                <input class="form__item--radio" type="radio" name="app-survey" id="iOS" value="iOS" required>
+                <label class="form__label  form__label--radio" for="iOS">Pink для iOS</label>
+              </div>
+              <div class="form__field">
+                <input class="form__item--radio" type="radio" name="app-survey" id="Android" value="Android">
+                <label class="form__label  form__label--radio" for="Android">Pink на Android</label>
+              </div>
+              <div class="form__field">
+                <input class="form__item--radio" type="radio" name="app-survey" id="Windows" value="Windows">
+                <label class="form__label  form__label--radio" for="Windows">Windows Phone</label>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset  form__fieldset--travel-date">
+              <legend>Когда вы путешествовали?*</legend>
+              <h3 class="form__subtitle">Когда вы путешествовали?*</h3>
+              <div class="form__field">
+                <input class="form__item  form__item--text" type="text" name="travelling-beginning" id="travelling-beginning" placeholder="1 апреля 2015 года" required>
+                <label class="form__label" for="travelling-beginning">Дата выезда</label>
+              </div>
+              <div class="form__field">
+                <span class="form__minus"></span><input class="form__item  form__item--number" type="text" name="travelling-duration" id="travelling-duration" placeholder="10 дней" required><span class="form__plus"></span>
+                <label class="form__label" for="travelling-duration">Продолжительность</label>
+              </div>
+              <div class="form__field">
+                <input class="form__item  form__item--text" type="text" name="travelling-end" id="travelling-end" placeholder="1 апреля 2015 года" required disabled>
+                <label class="form__label" for="travelling-end">Дата возвращения</label>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset  form__fieldset--gray">
+              <legend>Количество попутчиков*</legend>
+              <h3 class="form__subtitle">Количество попутчиков*</h3>
+              <div class="form__field  form__field--fellows-number">
+                <input class="form__item  form__item--number" type="text" name="fellow-traveler-number" id="fellow-traveler-number" placeholder="2 чел" required><span class="form__minus"></span><span class="form__plus"></span>
+              </div>
+              <div class="form__field  form__field--fellows-data">
+                <div class="form__field  form__field--index-number-col">
+                  <span class="form__number-symbol">№</span>
+                  <span class="form__index-number">1</span>
                 </div>
-                <div class="form__field">
-                  <label class="form__label  form__label--person-data" for="last-name">Фамилия:*</label>
-                  <input class="form__item  form__item--text" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию" required>
-                </div>
-                <div class="form__field">
-                  <label class="form__label  form__label--person-data" for="patronymic">Отчество:*</label>
-                  <input class="form__item  form__item--text" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
-                </div>
-              </fieldset>
-              <fieldset class="form__fieldset  form__fieldset--gray">
-                <h3 class="form__subtitle">С каким приложением путешествовали?*</h3>
-                <div class="form__field">
-                  <input class="form__item--radio" type="radio" name="app-survey" id="iOS" value="iOS" required>
-                  <label class="form__label  form__label--radio" for="iOS">Pink для iOS</label>
-                </div>
-                <div class="form__field">
-                  <input class="form__item--radio" type="radio" name="app-survey" id="Android" value="Android">
-                  <label class="form__label  form__label--radio" for="Android">Pink на Android</label>
-                </div>
-                <div class="form__field">
-                  <input class="form__item--radio" type="radio" name="app-survey" id="Windows" value="Windows">
-                  <label class="form__label  form__label--radio" for="Windows">Windows Phone</label>
-                </div>
-              </fieldset>
-              <fieldset class="form__fieldset  form__fieldset--travel-date">
-                <h3 class="form__subtitle">Когда вы путешествовали?*</h3>
-                <div class="form__field">
-                  <input class="form__item  form__item--text" type="text" name="travelling-beginning" id="travelling-beginning" placeholder="1 апреля 2015 года" required>
-                  <label class="form__label" for="travelling-beginning">Дата выезда</label>
-                </div>
-                <div class="form__field">
-                  <span class="form__minus"></span><input class="form__item  form__item--number" type="text" name="travelling-duration" id="travelling-duration" placeholder="10 дней" required><span class="form__plus"></span>
-                  <label class="form__label" for="travelling-duration">Продолжительность</label>
-                </div>
-                <div class="form__field">
-                  <input class="form__item  form__item--text" type="text" name="travelling-end" id="travelling-end" placeholder="1 апреля 2015 года" required disabled>
-                  <label class="form__label" for="travelling-end">Дата возвращения</label>
-                </div>
-              </fieldset>
-              <fieldset class="form__fieldset  form__fieldset--gray">
-                <h3 class="form__subtitle">Количество попутчиков*</h3>
-                <div class="form__field  form__field--fellows-number">
-                  <input class="form__item  form__item--number" type="text" name="fellow-traveler-number" id="fellow-traveler-number" placeholder="2 чел" required disabled><span class="form__minus"></span><span class="form__plus"></span>
-                </div>
-                <div class="form__field  form__field--fellows-data">
-                  <div class="form__field  form__field--col  form__field--index-number-col">
-                    <span class="form__number-symbol">№</span>
-                    <span class="form__index-number">1</span>
+                <div class="form__field  form__field--col">
+                  <div class="form__field">
+                    <label class="form__label  form__label--person-data" for="fellow-traveler1-name">Имя*</label>
+                    <input class="form__item  form__item--text  form__item--with-index" type="text" name="fellow-traveler1-name" id="fellow-traveler1-name" placeholder="Введите ваше имя" required>
                   </div>
-                  <div class="form__field  form__field--col">
-                    <div class="form__field">
-                      <label class="form__label  form__label--person-data" for="fellow-traveler1-name">Имя*</label>
-                      <input class="form__item  form__item--text  form__item--with-index" type="text" name="fellow-traveler1-name" id="fellow-traveler1-name" placeholder="Введите ваше имя" required>
-                    </div>
-                    <div class="form__field">
-                      <label class="form__label  form__label--person-data" for="fellow-traveler1-nickname">Прозвище:</label>
-                      <input class="form__item  form__item--text" type="text" name="fellow-traveler1-nickname" id="fellow-traveler1-nickname" placeholder="Ну как же без этого!">
-                    </div>
-                  </div>
-                </div>
-                <div class="form__field  form__field--fellows-data">
-                  <div class="form__field  form__field--col  form__field--index-number-col">
-                    <span class="form__number-symbol">№</span>
-                    <span class="form__index-number">2</span>
-                  </div>
-                  <div class="form-field  form__field--col">
-                    <div class="form__field">
-                      <label class="form__label  form__label--person-data" for="fellow-traveler2-name">Имя*</label>
-                      <input class="form__item  form__item--text  form__item--with-index" type="text" name="fellow-traveler2-name" id="fellow-traveler2-name" placeholder="Введите ваше имя" required>
-                    </div>
-                    <div class="form__field">
-                      <label class="form__label  form__label--person-data" for="fellow-traveler2-nickname">Прозвище:</label>
-                      <input class="form__item  form__item--text" type="text" name="fellow-traveler2-nickname" id="fellow-traveler2-nickname" placeholder="Ну как же без этого!">
-                    </div>
+                  <div class="form__field">
+                    <label class="form__label  form__label--person-data" for="fellow-traveler1-nickname">Прозвище:</label>
+                    <input class="form__item  form__item--text" type="text" name="fellow-traveler1-nickname" id="fellow-traveler1-nickname" placeholder="Ну как же без этого!">
                   </div>
                 </div>
-              </fieldset>
-              <fieldset class="form__fieldset">
-                <h3 class="form__subtitle">Ваши безбашенные достижения в путешествии</h3>
-                <div class="form__field  form__field--checkbox">
-                  <input class="form__item--checkbox" type="checkbox" name="shark-selfy" id="shark-selfy" checked>
-                  <label class="form__label  form__label--checkbox" for="shark-selfy"><span class="form__check-field"><i class="icon  icon--check"></i></span>Сделал селфи с акулой</label>
+                <div class="form__field  form__field--delete-item">
+                  <a href="#">Удалить</a>
                 </div>
-                <div class="form__field  form__field--checkbox">
-                  <input class="form__item--checkbox" type="checkbox" name="sunburned" id="sunburned" checked>
-                  <label class="form__label  form__label--checkbox" for="sunburned"><span class="form__check-field"><i class="icon  icon--check"></i></span>Обгорел на пляже</label>
+              </div>
+              <div class="form__field  form__field--fellows-data">
+                <div class="form__field  form__field--index-number-col">
+                  <span class="form__number-symbol">№</span>
+                  <span class="form__index-number">2</span>
                 </div>
-                <div class="form__field  form__field--checkbox">
-                  <input class="form__item--checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
-                  <label class="form__label  form__label--checkbox" for="chuck-norris"><span class="form__check-field"><i class="icon  icon--check"></i></span>Видел Чак Норриса</label>
-                </div>
-                <div class="form__field  form__field--checkbox">
-                  <input class="form__item--checkbox" type="checkbox" name="souvenir" id="souvenir">
-                  <label class="form__label  form__label--checkbox" for="souvenir"><span class="form__check-field"><i class="icon  icon--check"></i></span>Накупил сувениров</label>
-                </div>
-                <div class="form__field  form__field--checkbox">
-                  <input class="form__item--checkbox" type="checkbox" name="tower" id="tower" checked>
-                  <label class="form__label  form__label--checkbox" for="tower"><span class="form__check-field"><i class="icon  icon--check"></i></span>Удержал башню</label>
-                </div>
-                <div class="form__field  form__field--checkbox">
-                  <input class="form__item--checkbox" type="checkbox" name="hotel-crash" id="hotel-crash">
-                  <label class="form__label  form__label--checkbox" for="hotel-crash"><span class="form__check-field"><i class="icon  icon--check"></i></span>Разгромил отель</label>
-                </div>
-              </fieldset>
-              <fieldset class="form__fieldset  form__fieldset--gray">
-                <h3 class="form__subtitle">Ваши фотографии из поездки*</h3>
-                <label class="btn  btn--bord-gray">
-                  Загрузить фото
-                  <input class="form__item  form__item--file" type="file" name="photo" value="Загрузить фото" required>
-                </label>
-                <div class="form__upload-area">
-                  <div class="form__uploaded-file">
-                    <div class="form__delete-file"></div>
-                    <img src="img/upload-image1.jpg" width="67" height="68">
-                    <span class="form__uploaded-descr">img-1.jpg</span>
+                <div class="form-field  form__field--col">
+                  <div class="form__field">
+                    <label class="form__label  form__label--person-data" for="fellow-traveler2-name">Имя*</label>
+                    <input class="form__item  form__item--text  form__item--with-index" type="text" name="fellow-traveler2-name" id="fellow-traveler2-name" placeholder="Введите ваше имя" required>
                   </div>
-                  <div class="form__uploaded-file">
-                    <div class="form__delete-file"></div>
-                    <img src="img/upload-image2.jpg" width="68" height="68">
-                    <span class="form__uploaded-descr">img-2.jpg</span>
-                  </div>
-                  <div class="form__uploaded-file">
-                    <div class="form__delete-file"></div>
-                    <img src="img/upload-image3.jpg" width="67" height="68">
-                    <span class="form__uploaded-descr">img-3.jpg</span>
-                  </div>
-                  <div class="form__uploaded-file">
-                    <div class="form__delete-file"></div>
-                    <img src="img/upload-image4.jpg" width="67" height="67">
-                    <span class="form__uploaded-descr">img-4.jpg</span>
-                  </div>
-                  <div class="form__uploaded-file">
-                    <div class="form__delete-file"></div>
-                    <img src="img/upload-image5.jpg" width="68" height="67">
-                    <span class="form__uploaded-descr">img-5.jpg</span>
-                  </div>
-                  <div class="form__uploaded-file">
-                    <div class="form__delete-file"></div>
-                    <img src="img/upload-image6.jpg" width="67" height="67">
-                    <span class="form__uploaded-descr">img-6.jpg</span>
-                  </div>
-                  <div class="form__uploaded-file">
-                    <div class="form__delete-file"></div>
-                    <img src="img/upload-image7.jpg" width="68" height="67">
-                    <span class="form__uploaded-descr">img-7.jpg</span>
-                  </div>
-                  <div class="form__uploaded-file">
-                    <div class="form__delete-file"></div>
-                    <img src="img/upload-image8.jpg" width="68" height="67">
-                    <span class="form__uploaded-descr">img-8.jpg</span>
+                  <div class="form__field">
+                    <label class="form__label  form__label--person-data" for="fellow-traveler2-nickname">Прозвище:</label>
+                    <input class="form__item  form__item--text" type="text" name="fellow-traveler2-nickname" id="fellow-traveler2-nickname" placeholder="Ну как же без этого!">
                   </div>
                 </div>
-              </fieldset>
-              <fieldset class="form__fieldset">
-                <input class="btn  btn--bg-green" type="submit" value="Отправить форму">
-              </fieldset>
-            </form>
+                <div class="form__field  form__field--delete-item">
+                  <a href="#">Удалить</a>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend>Ваши безбашенные достижения в путешествии</legend>
+              <h3 class="form__subtitle">Ваши безбашенные достижения в путешествии</h3>
+              <div class="form__field  form__field--checkbox">
+                <input class="form__item--checkbox" type="checkbox" name="shark-selfy" id="shark-selfy" checked>
+                <label class="form__label  form__label--checkbox" for="shark-selfy"><span class="form__check-field"><i class="icon  icon--check"></i></span>Сделал селфи с акулой</label>
+              </div>
+              <div class="form__field  form__field--checkbox">
+                <input class="form__item--checkbox" type="checkbox" name="sunburned" id="sunburned" checked>
+                <label class="form__label  form__label--checkbox" for="sunburned"><span class="form__check-field"><i class="icon  icon--check"></i></span>Обгорел на пляже</label>
+              </div>
+              <div class="form__field  form__field--checkbox">
+                <input class="form__item--checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
+                <label class="form__label  form__label--checkbox" for="chuck-norris"><span class="form__check-field"><i class="icon  icon--check"></i></span>Видел Чак Норриса</label>
+              </div>
+              <div class="form__field  form__field--checkbox">
+                <input class="form__item--checkbox" type="checkbox" name="souvenir" id="souvenir">
+                <label class="form__label  form__label--checkbox" for="souvenir"><span class="form__check-field"><i class="icon  icon--check"></i></span>Накупил сувениров</label>
+              </div>
+              <div class="form__field  form__field--checkbox">
+                <input class="form__item--checkbox" type="checkbox" name="tower" id="tower" checked>
+                <label class="form__label  form__label--checkbox" for="tower"><span class="form__check-field"><i class="icon  icon--check"></i></span>Удержал башню</label>
+              </div>
+              <div class="form__field  form__field--checkbox">
+                <input class="form__item--checkbox" type="checkbox" name="hotel-crash" id="hotel-crash">
+                <label class="form__label  form__label--checkbox" for="hotel-crash"><span class="form__check-field"><i class="icon  icon--check"></i></span>Разгромил отель</label>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset  form__fieldset--gray">
+              <legend>Ваши фотографии из поездки*</legend>
+              <h3 class="form__subtitle">Ваши фотографии из поездки*</h3>
+              <label class="btn  btn--bord-gray  btn--upload">
+                Загрузить фото
+                <input class="form__item  form__item--file" type="file" name="photo" value="Загрузить фото" required>
+              </label>
+              <div class="form__upload-area">
+                <div class="form__uploaded-file">
+                  <div class="form__delete-file"></div>
+                  <img src="img/upload-image1.jpg" width="67" height="68">
+                  <span class="form__uploaded-descr">img-1.jpg</span>
+                </div>
+                <div class="form__uploaded-file">
+                  <div class="form__delete-file"></div>
+                  <img src="img/upload-image2.jpg" width="68" height="68">
+                  <span class="form__uploaded-descr">img-2.jpg</span>
+                </div>
+                <div class="form__uploaded-file">
+                  <div class="form__delete-file"></div>
+                  <img src="img/upload-image3.jpg" width="67" height="68">
+                  <span class="form__uploaded-descr">img-3.jpg</span>
+                </div>
+                <div class="form__uploaded-file">
+                  <div class="form__delete-file"></div>
+                  <img src="img/upload-image4.jpg" width="67" height="67">
+                  <span class="form__uploaded-descr">img-4.jpg</span>
+                </div>
+                <div class="form__uploaded-file">
+                  <div class="form__delete-file"></div>
+                  <img src="img/upload-image5.jpg" width="68" height="67">
+                  <span class="form__uploaded-descr">img-5.jpg</span>
+                </div>
+                <div class="form__uploaded-file">
+                  <div class="form__delete-file"></div>
+                  <img src="img/upload-image6.jpg" width="67" height="67">
+                  <span class="form__uploaded-descr">img-6.jpg</span>
+                </div>
+                <div class="form__uploaded-file">
+                  <div class="form__delete-file"></div>
+                  <img src="img/upload-image7.jpg" width="68" height="67">
+                  <span class="form__uploaded-descr">img-7.jpg</span>
+                </div>
+                <div class="form__uploaded-file">
+                  <div class="form__delete-file"></div>
+                  <img src="img/upload-image8.jpg" width="68" height="67">
+                  <span class="form__uploaded-descr">img-8.jpg</span>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset  form__fieldset--submit">
+              <input class="btn  btn--bg-green" type="submit" value="Отправить форму">
+              <p class="footnote"><span>*</span>-обязательные поля</p>
+            </fieldset>
+          </form>
         </div>
-        <p class="footnote"><span>*</span>-обязательные поля</p>
+      </div>
     </main>
 
     <footer class="main-footer">
-      <div class="logo  logo--image-text">
-        <a href="index.html">
-          <img src="img/logo--image-text.png" width="145" height="40">
-        </a>
-      </div>
-      <div class="social">
-        <a class="social__item  social__item--tw" href="https://twitter.com/"><span class="sprite  sprite-tw-icon"></span>Мы в Твиттере!</a>
-        <a class="social__item  social__item--fb" href="https://www.facebook.com/"><span class="sprite  sprite-fb-icon"></span>Мы в Фейсбуке!</a>
-        <a class="social__item  social__item--yt" href="https://www.youtube.com/"><span class="sprite  sprite-yt-icon"></span>Мы в Ютубе!</a>
-      </div>
-      <div class="main-footer__copyright">
-        Разработано <a href="https://htmlacademy.ru/"><span class="sprite  sprite-author-logo"></span></a>
+      <div class="wrapper">
+        <div class="logo  logo--footer">
+          <a href="index.html"></a>
+        </div>
+        <div class="social">
+          <a class="social__item  social__item--tw" href="https://twitter.com/"><span class="sprite  sprite-tw-icon"></span>Мы в Твиттере!</a>
+          <a class="social__item  social__item--fb" href="https://www.facebook.com/"><span class="sprite  sprite-fb-icon"></span>Мы в Фейсбуке!</a>
+          <a class="social__item  social__item--yt" href="https://www.youtube.com/"><span class="sprite  sprite-yt-icon"></span>Мы в Ютубе!</a>
+        </div>
+        <div class="main-footer__copyright">
+          Разработано <a href="https://htmlacademy.ru/"><span class="sprite  sprite-author-logo"></span></a>
+        </div>
       </div>
     </footer>
 

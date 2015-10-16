@@ -1,9 +1,15 @@
 .footnote {
 	margin: 0;
-	margin-bottom: 25px;
 	line-height: $line-height--large;
+	text-transform: uppercase;
 
 	span {
 		color: $pink;
+	}
+
+	@media (min-width: 700px) {
+		float: right;
+		height:64px;
+		line-height: 64px;
 	}
 }

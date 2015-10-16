@@ -1,6 +1,6 @@
 .table {
 	margin-bottom: 40px;
-	width: 276px*3 + 2px*4;
+	width: 300%;
 	line-height: $line-height--large;
 	text-transform: uppercase;
 	border-collapse: collapse;
@@ -8,7 +8,7 @@
 	&__head-cell {
 		padding-top: 19px;
 		padding-bottom: $distance;
-		width: 276px; 
+		width: 33.3%; 
 		font-weight: $text--bold;
 		font-size: $font-size--medium;
 		text-align: center;
@@ -24,8 +24,8 @@
 				content: "Хит";
 				display: block;
 				position: absolute;
-				top: 10px;
-				left: -25px;
+				top: 5px;
+				left: -30px;
 				width: 105px;
 				height: 30px;
 				font-weight: $text--semibold;
@@ -38,14 +38,24 @@
 				transform: rotate(-45deg);
 			}
 		}
+
+		&--dark {
+			color: $white;
+			background-color: $base-color;
+		}
 	}
 
 	&__price {
-		font-weight: text--light;
+		font-weight: $text--light;
 		font-size: $font-size--large;
 	}
 
-	td {
+	&__cell--additional,
+	&__head-cell--additional {
+		display: none;
+	}
+
+	&__cell {
 		position: relative;
 		padding-left: 22px;
 		padding-right: 18px;
@@ -57,10 +67,64 @@
 		background-color: #ffffff;
 	}
 
-	&--dark-head {
-		th {
-			color: $white;
-			background-color: $base-color;
+	.icon {
+		right: 18px;
+		top: 50%;
+
+		&--check {
+			margin-top: -11px;
+
+			&:before,
+			&:after {
+				background-color: $check-green;
+			}
+		}
+
+		&--cross {
+			margin-top: -13px;
+		}
+	}
+
+	@media (min-width: 700px) {
+		width: 100%;
+		transform: none !important;
+
+		&__head-cell {
+			width: 25%;
+		}
+
+		&__cell {
+			padding-left: 15px;
+			padding-right: 15px;
+			text-transform: none;
+			text-indent: -9999px;
+		}
+
+		&__cell--additional,
+		&__head-cell--additional {
+			display: table-cell;
+		}
+
+		&__head-cell--additional {
+			border: none;
+		}
+
+		&__cell--additional {
+			margin-bottom: -2px;
+			text-indent: inherit;
+			border-top: 2px solid $border-gray;
+		}
+
+		.icon {
+			right: 50%;
+
+			&--check {
+				margin-right: -14.5px;
+			}
+
+			&--cross {
+				margin-right: -13px;
+			}
 		}
 	}
 }

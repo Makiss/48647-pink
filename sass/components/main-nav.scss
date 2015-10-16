@@ -1,4 +1,11 @@
 .main-nav {
+
+	@media (min-width: 980px) {
+		float: right;
+		padding-top: 18px;
+		width: 700px;
+		text-align: right;
+	}
 	
 	&__list {
 		display: none;
@@ -9,6 +16,12 @@
 		padding: 0;
 		width: 100%;
 		background-color: $base-color;
+
+		@media (min-width: 980px) {
+			display: block;
+			position: static;
+			background-color: transparent;
+		}
 	}
 
 	&__item {
@@ -19,10 +32,29 @@
 		width: 100%;
 		box-shadow: 0 1px $black;
 		box-shadow: 0 1px rgba(255, 255, 255, 0.15) inset;
+
+		@media (min-width: 980px) {
+			display: inline-block;
+			margin: 0;
+			margin-right: 70px;
+			padding: 0;
+			width: auto;
+			box-shadow: none;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
 	}
 
 	&__link{
 		line-height: 3.2rem;
+
+		@media (min-width: 980px) {
+			font-weight: $text--normal;
+			line-height: 1.8rem;
+			text-transform: none;
+		}
 	}
 
 	&__toggle {
@@ -30,6 +62,14 @@
 		float: right;
 		width: 50px;
 		height:24px;
+
+		@media (min-width: 700px) {
+			margin-top: 17px;
+		}
+
+		@media (min-width: 980px) {
+			display: none;
+		}
 
 		>span {
 			position: absolute;
@@ -65,6 +105,10 @@
 		float: right;
 		width: 23px;
 		height: 22px;
+
+		@media (min-width: 700px) {
+			margin-top: 17px;
+		}
 
 		>span {
 			display: none;

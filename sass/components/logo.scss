@@ -1,14 +1,42 @@
 .logo {
-	&--text {
-		float: left;
-		width: 74px;
-		height: 23px;
+	a {
+		display: block;
+		height: 100%;
 	}
 
-	&--image-text {
+	&--header,
+	&--footer {
+		background-image: url("../img/sprite-logo/logo-spritesheet.png");    
+		background-repeat: no-repeat;
+	}
+
+	&--header {
+		float: left;
+		@include sprite(-5px, -155px, 74px, 23px);
+
+		@media (min-width: 700px) {
+			@include sprite(-5px, -188px, 145px, 40px);
+		}
+
+		@media (min-width: 940px) {
+			@include sprite(-5px, -105px, 146px, 40px);
+		}
+	}
+
+	&--footer {
 		margin: 0 auto;
 		margin-bottom: 40px;
-		width: 145px;
-		height: 40px;
+		@include sprite(-5px, -55px, 145px, 40px);
+
+		@media (min-width: 700px) {
+			float: left;
+			margin: 0;
+			margin-right: 12.096774193548387096774193548387%;
+		}
+
+		@media (min-width: 940px) {
+			margin-right: 25.10638297872340425531914893617%;
+			@include sprite(-5px, -5px, 145px, 40px);
+		}
 	}
 }

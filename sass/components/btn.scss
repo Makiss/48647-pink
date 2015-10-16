@@ -1,6 +1,6 @@
 .btn {
 	display: inline-block;
-	padding: ($distance - 3px) $distance;
+	padding: 15px $distance;
 	width: 100%;
 	font-weight: $text--bold;
 	font-size: $font-size--medium;
@@ -40,6 +40,17 @@
 		text-transform: uppercase;
 		background-color: $btn-green;
 		@include border($color: $btn-green);
+	}
+
+	&--upload {
+		border: none;
+		border-radius: 2px;
+		cursor: pointer;
+
+		@media (min-width: 980px) {
+			color: $white;
+			background-color: $pink;
+		}
 	}
 
 }

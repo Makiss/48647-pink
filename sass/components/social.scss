@@ -5,13 +5,16 @@
 		display: inline-block;
 		position: relative;
 		margin-right: 8px;
-		width: 45px;
-		height: 45px;
+		width: 51px;
+		height: 51px;
 		vertical-align: top;
 		border-radius: 50%;
 		@include border($color: #e9ebec);
 		text-indent: -9999px;
 	}
 
-
+	@media (min-width: 700px) {
+		float: left;
+		margin-bottom: 0;
+	}
 }

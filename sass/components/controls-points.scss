@@ -9,6 +9,7 @@
 		height: 12px;
 		vertical-align: top;
 		border-radius: 50%;
+		cursor: pointer;
 
 		&::before {
 			content: "";
@@ -41,11 +42,11 @@
 }
 
 #btn2:checked ~ .reviews__content {
-	transform: translate(-320px);
+	transform: translate(-33.3%);
 }
 
 #btn3:checked ~ .reviews__content {
-	transform: translate(-640px);
+	transform: translate(-66.6%);
 }
 
 #btn4:checked ~ .controls-points label[for="btn4"],
@@ -58,14 +59,14 @@
 	}
 }	
 
-#btn4:checked ~ .table--dark-head {
+#btn4:checked ~ .table {
 	transform: translate(20px);
 }
 
-#btn5:checked ~ .table--dark-head {
-	transform: translate(-260px);
+#btn5:checked ~ .table {
+	transform: translate(-33.3%);
 }
 
-#btn6:checked ~ .table--dark-head {
-	transform: translate(-540px);
+#btn6:checked ~ .table {
+	transform: translate(-66.6%);
 }

@@ -1,7 +1,9 @@
 .app-download {
-	margin-top: 314px;
+	margin-top: 300px;
 	padding-top: 28px;
 	padding-bottom: 1px;
+	padding-right: $distance;
+	padding-left: $distance;
 	color: $white;
 	background-color: $base-color;
 
@@ -23,5 +25,28 @@
 		margin-top: 0;
 		margin-bottom: 30px;
 		font-weight: $text--light;
+		line-height: 2.4rem;
+	}
+
+	@media (min-width: 700px) {
+		margin-top: 0;
+    padding: 0;
+    padding-bottom: 78px;
+    width: 305px;
+    background-color: transparent;
+
+    &__description {
+			font-size: 1.8rem;
+			text-align: center;
+		}
+
+		.btn {
+			margin-bottom: 45px;
+			width: 280px;
+		}
+
+		&__platform {
+			margin-bottom: 38px;
+		}
 	}
 }
