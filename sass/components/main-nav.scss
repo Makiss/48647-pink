@@ -1,138 +1,138 @@
 .main-nav {
 
-	@media (min-width: 980px) {
-		float: right;
-		padding-top: 18px;
-		width: 700px;
-		text-align: right;
-	}
+  @media (min-width: 980px) {
+    float: right;
+    padding-top: 18px;
+    width: 700px;
+    text-align: right;
+  }
 	
-	&__list {
-		display: none;
-		position: absolute;
-		left: 0;
-		top: 100%;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		background-color: $base-color;
+  &__list {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: $base-color;
 
-		@media (min-width: 980px) {
-			display: block;
-			position: static;
-			background-color: transparent;
-		}
-	}
+    @media (min-width: 980px) {
+      display: block;
+      position: static;
+      background-color: transparent;
+    }
+  }
 
-	&__item {
-		display: block;
-		margin-top: 1px;
-		padding-top: 19px;
-		padding-bottom: 17px;
-		width: 100%;
-		box-shadow: 0 1px $black;
-		box-shadow: 0 1px rgba(255, 255, 255, 0.15) inset;
+  &__item {
+    display: block;
+    margin-top: 1px;
+    padding-top: 19px;
+    padding-bottom: 17px;
+    width: 100%;
+    box-shadow: 0 1px $black;
+    box-shadow: 0 1px rgba(255, 255, 255, 0.15) inset;
 
-		@media (min-width: 980px) {
-			display: inline-block;
-			margin: 0;
-			margin-right: 70px;
-			padding: 0;
-			width: auto;
-			box-shadow: none;
+    @media (min-width: 980px) {
+      display: inline-block;
+      margin: 0;
+      margin-right: 70px;
+      padding: 0;
+      width: auto;
+      box-shadow: none;
 
-			&:last-of-type {
-				margin-right: 0;
-			}
-		}
-	}
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
 
-	&__link{
-		line-height: 3.2rem;
+  &__link{
+    line-height: 3.2rem;
 
-		@media (min-width: 980px) {
-			font-weight: $text--normal;
-			line-height: 1.8rem;
-			text-transform: none;
-		}
-	}
+    @media (min-width: 980px) {
+      font-weight: $text--normal;
+      line-height: 1.8rem;
+      text-transform: none;
+    }
+  }
 
-	&__toggle {
-		position: relative; 
-		float: right;
-		width: 50px;
-		height:24px;
+  &__toggle {
+    position: relative; 
+    float: right;
+    width: 50px;
+    height:24px;
 
-		@media (min-width: 700px) {
-			margin-top: 17px;
-		}
+    @media (min-width: 700px) {
+      margin-top: 17px;
+    }
 
-		@media (min-width: 980px) {
-			display: none;
-		}
+    @media (min-width: 980px) {
+      display: none;
+    }
 
-		>span {
-			position: absolute;
-			left: 0;
-			top: 50%;
-			margin-top: -2px;
-			width: 100%;
-			height: 4px;
-			background: $white;
-		}
+    >span {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -2px;
+      width: 100%;
+      height: 4px;
+      background: $white;
+    }
 
-		&::after,
-		&::before {
-			content: "";
-			position: absolute;
-			left: 0;
-			width: 100%;
-			height: 4px;
-			background: $white;
-		}
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: $white;
+    }
 
-		&::after {
-			bottom: 0;
-		}
+    &::after {
+      bottom: 0;
+    }
 
-		&::before {
-			top: 0;
-		}
-	}
+    &::before {
+      top: 0;
+    }
+  }
 
-	&__toggle-close {
-		position: relative; 
-		float: right;
-		width: 23px;
-		height: 22px;
+  &__toggle-close {
+    position: relative; 
+    float: right;
+    width: 23px;
+    height: 22px;
 
-		@media (min-width: 700px) {
-			margin-top: 17px;
-		}
+    @media (min-width: 700px) {
+      margin-top: 17px;
+    }
 
-		>span {
-			display: none;
-		}
+    >span {
+      display: none;
+    }
 
-		&::after,
-		&::before {
-			content: "";
-			display: block;
-			position: absolute;
-			left: -10px;
-			top: 50%;
-			margin-top: -2px;
-			width: 31px;
-			height: 4px;
-			background-color: $white;
-		}
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      margin-top: -2px;
+      width: 31px;
+      height: 4px;
+      background-color: $white;
+    }
 
-		&::after {
-			transform: rotate(-45deg);
-		}
+    &::after {
+      transform: rotate(-45deg);
+    }
 
-		&::before {
-			transform: rotate(45deg);
-		}
-	}
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
 }

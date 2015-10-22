@@ -1,56 +1,58 @@
 .btn {
-	display: inline-block;
-	padding: 15px $distance;
-	width: 100%;
-	font-weight: $text--bold;
-	font-size: $font-size--medium;
-	line-height: $line-height--large;
-	text-align: center;
-	vertical-align: top;
-	border-radius: 2px;
+  display: inline-block;
+  padding: 15px $distance;
+  width: 100%;
+  font-weight: $text--bold;
+  font-size: $font-size--medium;
+  line-height: $line-height--large;
+  text-align: center;
+  vertical-align: top;
+  border-radius: 2px;
 
-	&--bord-white {
-		margin-bottom: $distance + 10px;
-		line-height: 1.8rem;
-		text-transform: none;
-		border-radius: 35px;
-		@include border(($border-width + 1px), $color: $white);
-	}
+  &--bord-white {
+    margin-bottom: $distance + 10px;
+    line-height: 1.8rem;
+    text-transform: none;
+    border-radius: 35px;
+    @include border(($border-width + 1px), $color: $white);
+  }
 
-	&--bord-gray {
-		margin-bottom: $distance;
-		font-weight: $text--bold;
-		font-size: $font-size--medium;
-		color: $base-color;
-		background-color: $white;
-		@include border();
-	}
+  &--bord-gray {
+    margin-bottom: $distance;
+    font-weight: $text--bold;
+    font-size: $font-size--medium;
+    color: $base-color;
+    background-color: $white;
+    @include border();
+  }
 
-	&--small {
-		margin-right: $distance;
-		width: 130px;
+  &--small {
+    margin-right: $distance;
+    width: 130px;
 
-		&:nth-child(2n) {
-			margin-right: 0;
-		}
-	}
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
 
-	&--bg-green {
-		color: $white;
-		text-transform: uppercase;
-		background-color: $btn-green;
-		@include border($color: $btn-green);
-	}
+  &--bg-green {
+    color: $white;
+    text-transform: uppercase;
+    background-color: $btn-green;
+    @include border($color: $btn-green);
+  }
 
-	&--upload {
-		border: none;
-		border-radius: 2px;
-		cursor: pointer;
+  &--upload {
+    margin-bottom: 41px;
+    border-radius: 2px;
+    cursor: pointer;
 
-		@media (min-width: 980px) {
-			color: $white;
-			background-color: $pink;
-		}
-	}
-
+    @media (min-width: 980px) {
+      padding-top: 17px;
+      padding-bottom: 16px;
+      border: none;
+      color: $white;
+      background-color: $pink;
+    }
+  }
 }

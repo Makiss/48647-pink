@@ -1,20 +1,57 @@
 .social {
-	margin-bottom: 41px;
+  margin-bottom: 41px;
 
-	&__item {
-		display: inline-block;
-		position: relative;
-		margin-right: 8px;
-		width: 51px;
-		height: 51px;
-		vertical-align: top;
-		border-radius: 50%;
-		@include border($color: #e9ebec);
-		text-indent: -9999px;
-	}
+  &__item {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    width: 51px;
+    height: 51px;
+    vertical-align: top;
+    border-radius: 50%;
+    @include border($color: #e9ebec);
+  }
 
-	@media (min-width: 700px) {
-		float: left;
-		margin-bottom: 0;
-	}
+  &__icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    &--tw {
+      margin-left: -8.75px;
+      margin-top: -7.3315px;
+      width: 17.5px;
+      height: 14.663px;
+      line-height: 14.663px;
+    }
+
+    &--fb {
+      margin-left: -4.3365px;
+      margin-top: -9.472px;
+      width: 8.673px;
+      height: 18.944px;
+      line-height: 18.944px;
+    }
+
+    &--yt {
+      margin-left: -7.32px;
+      margin-top: -6.98px;
+      width: 14.64px;
+      height: 13.96px;
+      line-height: 13.96px;
+    }
+
+    &--ha-logo {
+      position: static;
+      margin: 0;
+      vertical-align: middle;
+    }
+  }
+
+
+  @media (min-width: 700px) {
+    float: left;
+    margin-bottom: 0;
+  }
 }
