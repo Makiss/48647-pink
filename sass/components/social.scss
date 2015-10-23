@@ -10,6 +10,18 @@
     vertical-align: top;
     border-radius: 50%;
     @include border($color: #e9ebec);
+
+    &:hover {
+      @include border($color: $base-color);
+    }
+
+    &:active {
+      @include border($color: #e9ebec);
+
+      svg {
+        fill: rgba(210, 40, 86, 0.3);
+      }
+    }
   }
 
   &__icon {
@@ -36,7 +48,7 @@
 
     &--yt {
       margin-left: -7.32px;
-      margin-top: -6.98px;
+      margin-top: -7.5px;
       width: 14.64px;
       height: 13.96px;
       line-height: 13.96px;

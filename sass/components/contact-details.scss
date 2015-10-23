@@ -35,6 +35,22 @@
     color: #d22856;
   }
 
+  &__link {
+    font-weight: $text--light;
+    font-size: $font-size--large;
+    color: #d22856;
+    text-transform: none;
+
+    &:hover {
+      color: $base-color;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: #ced0d2;
+    }
+  }
+
   &::after {
     content: "";
     display: block;
@@ -63,6 +79,11 @@
     }
 
     &__field {
+      margin-bottom: 45px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       &--phone {
         float: left;
@@ -75,10 +96,6 @@
       &--address {
         clear: both;
       }
-    }
-
-    &__item {
-      margin-bottom: 45px;
     }
 
     &::after {
@@ -110,9 +127,5 @@
       bottom: -123px;
       background-image: url("../img/map__overlay--desktop.png");
     }
-  }
-
-  &__item {
-    margin-bottom: 0;
   }
 }

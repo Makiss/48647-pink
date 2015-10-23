@@ -24,6 +24,18 @@
       background-color: #bec2c7;
       border-radius: 50%;
     }
+
+    &:hover {
+      &::before {
+        background-color: #7e868f;
+      }
+    }
+
+    &:active {
+      &::before {
+        background-color: #e9ebec;
+      }
+    }
   }
 }
 

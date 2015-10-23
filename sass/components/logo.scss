@@ -9,15 +9,31 @@
     top: 5px;
     left: -52px;
 
+    &:hover {
+      .logo-text__path,
+      .spectacles__path,
+      .spectacles-broken__path {
+        fill: $pink;
+      }
+    }
+
+    &:active {
+      .logo-text__path,
+      .spectacles__path,
+      .spectacles-broken__path {
+        fill: rgba(255,255,255,0.3);
+      }
+    }
+
     .pink-point,
     .spectacles,
     .spectacles-broken {
       opacity: 0;
     }
-    float: left;
 
     @media (min-width: 700px) {
       position: static;
+      float: left;
 
       .spectacles {
         opacity: 1;
@@ -25,9 +41,11 @@
     }
 
     @media (min-width: 980px) {
+
       .spectacles {
         opacity: 0;
       }
+      
       .pink-point,
       .spectacles-broken {
         opacity: 1;
@@ -38,6 +56,23 @@
   &--footer {
     margin: 0 auto;
     margin-bottom: 40px;
+
+     &:hover {
+      .logo-text__path {
+        fill: $pink;
+      }
+    }
+
+    &:active {
+      .logo-text__path {
+        fill: rgba(40, 54, 69, 0.3);
+      }
+
+      .spectacles__path,
+      .spectacles-broken__path {
+        fill: rgba(210, 40, 86, 0.3);
+      }
+    }
 
     .spectacles-broken,
     .point {

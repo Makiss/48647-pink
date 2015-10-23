@@ -8,11 +8,25 @@
 
   &__copyright {
     margin-bottom: 30px;
+  }
 
-    a {
+  &__link {
+    &--ha-logo {
       display: inline-block;
       margin-left: 11px;
       vertical-align: middle;
+
+      &:hover {
+        svg {
+          fill: $base-color;
+        }
+      }
+
+      &:active {
+        svg {
+          fill: rgba(40, 54, 69, 0.3);
+        }
+      }
     }
   }
 

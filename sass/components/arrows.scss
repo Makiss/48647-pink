@@ -4,7 +4,21 @@
     top: 55%;
     width: 22px;
     height: 42px;
-    cursor: pointer;
+
+    &:hover {
+      &:before,
+      &:after {
+        background-color: #7e868f;
+      }
+    }
+
+    &:active {
+      &:before,
+      &:after {
+        background-color: #e9ebec;
+      }
+    }
+
 
     &:before,
     &:after {
@@ -16,6 +30,7 @@
       width: 29px;
       height: 3px;
       background-color: #bec2c7;
+      cursor: pointer;
     }
 
     &--left {

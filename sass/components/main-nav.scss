@@ -30,16 +30,35 @@
     padding-top: 19px;
     padding-bottom: 17px;
     width: 100%;
-    box-shadow: 0 1px $black;
-    box-shadow: 0 1px rgba(255, 255, 255, 0.15) inset;
+    box-shadow: 0 1px $black,
+                0 1px rgba(255, 255, 255, 0.15) inset;
 
     @media (min-width: 980px) {
       display: inline-block;
+      position: relative;
       margin: 0;
       margin-right: 70px;
       padding: 0;
       width: auto;
       box-shadow: none;
+
+      &:hover {
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -5px;
+          height: 2px;
+          width: 100%;
+          background-color: $white;
+        }
+      }
+
+      &:active {
+        &:after {
+          display: none;
+        }
+      }
 
       &:last-of-type {
         margin-right: 0;
@@ -50,10 +69,26 @@
   &__link{
     line-height: 3.2rem;
 
+    &:hover {
+      color: $pink;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
+
     @media (min-width: 980px) {
       font-weight: $text--normal;
       line-height: 1.8rem;
       text-transform: none;
+
+      &:hover {
+        color: $white;
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
     }
   }
 
@@ -62,6 +97,22 @@
     float: right;
     width: 50px;
     height:24px;
+
+    &:hover {
+      >span,
+      &:before,
+      &:after {
+        background-color: $pink;
+      }
+    }
+
+    &:active {
+      >span,
+      &:before,
+      &:after {
+        background-color: rgba(210, 40, 86, 0.3);
+      }
+    }
 
     @media (min-width: 700px) {
       margin-top: 17px;
@@ -105,6 +156,22 @@
     float: right;
     width: 23px;
     height: 22px;
+
+    &:hover {
+      >span,
+      &:before,
+      &:after {
+        background-color: $pink;
+      }
+    }
+
+    &:active {
+      >span,
+      &:before,
+      &:after {
+        background-color: rgba(210, 40, 86, 0.3);
+      }
+    }
 
     @media (min-width: 700px) {
       margin-top: 17px;

@@ -8,6 +8,7 @@
   text-align: center;
   vertical-align: top;
   border-radius: 2px;
+  outline: none;
 
   &--bord-white {
     margin-bottom: $distance + 10px;
@@ -15,6 +16,15 @@
     text-transform: none;
     border-radius: 35px;
     @include border(($border-width + 1px), $color: $white);
+
+    &:hover {
+      color: $pink;
+      background-color: $white;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3)
+    }
   }
 
   &--bord-gray {
@@ -24,6 +34,17 @@
     color: $base-color;
     background-color: $white;
     @include border();
+
+    @media (max-width: 979px) {
+      &:hover {
+        border-color: $base-color;
+      }
+
+      &:active {
+        color: $white;
+        background-color: $base-color;
+      }
+    }
   }
 
   &--small {
@@ -40,6 +61,14 @@
     text-transform: uppercase;
     background-color: $btn-green;
     @include border($color: $btn-green);
+
+    &:hover {
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &--upload {
@@ -53,6 +82,18 @@
       border: none;
       color: $white;
       background-color: $pink;
+
+      &:hover {
+        background-color: darken($pink, 5%);
+      }
+
+      &:active {
+        background-color: rgba(210, 40, 86, 0.3);
+      }
     }
+  }
+
+  &--disabled {
+    background-color: #e5e5e5;
   }
 }

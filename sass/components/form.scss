@@ -250,6 +250,8 @@
         text-align: left;
 
         .form__item--number {
+          padding-top: 16.5px;
+          padding-bottom: 16.5px;
           width: 252px;
           border: none;
         }
@@ -257,6 +259,8 @@
         .form__plus,
         .form__minus {
           top: 0;
+          width: 63px;
+          height: 63px;
           @include border();
         }
 
@@ -332,6 +336,15 @@
         text-transform: uppercase;
       }
 
+      a:hover {
+        color: $pink;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: rgba(210, 40, 86, 0.3);
+      }
+
       @media (min-width: 700px) {
         display: block;
         margin-top: 52px;
@@ -394,11 +407,32 @@
     vertical-align: top;
     background-color: $white;
     cursor: pointer;
+
+    &:hover {
+      top: 0;
+      width: 63px;
+      height: 63px;
+      @include border(2px, solid, $base-color);
+    }
+
+    &:active {
+      background-color: $base-color;
+
+
+      &::after,
+      &::before {
+        background-color: $white;
+      }
+    }
   }
 
   &__plus {
     right: 2px;
     border-left: 2px solid $border-gray;
+
+    &:hover {
+      right: 0;
+    }
 
     &::before,
     &::after {
@@ -422,6 +456,10 @@
   &__minus {
     left: 2px;
     border-right: 2px solid $border-gray;
+
+    &:hover {
+      left: 0;
+    }
 
     &::after {
       content: "";
@@ -447,6 +485,14 @@
     line-height: $line-height--large;
     border-radius: 2px;
     @include border();
+
+    &:hover {
+      border-color: $base-color;
+    }
+
+    &:focus {
+      border-color: $pink;
+    }
 
     &--number {
       padding-right: 80px;
@@ -485,6 +531,19 @@
     }
 
     &--radio {
+      
+      &:hover {
+        &:before {
+          border-color: $base-color;
+        }
+      }
+
+      &:active {
+        &:before {
+          border-color: $pink;
+        }
+      }
+
       &::before,
       &::after {
         content: "";
@@ -532,6 +591,14 @@
     width: 39px;
     height: 39px;
     @include border();
+
+    &:hover {
+      border-color: $base-color;
+    }
+
+    &:active {
+      border-color: $pink;
+    }
 
     .icon--check {
       display: none;
@@ -686,6 +753,24 @@
     background-color: $white;
     cursor: pointer;
     @include border();
+
+    &:hover {
+      border-color: $base-color;
+
+      &::before,
+      &::after {
+        background-color: $base-color;
+      }
+    }
+
+    &:active {
+      background-color: $base-color;
+      
+      &::before,
+      &::after {
+        background-color: $white;
+      }
+    }
 
     @media (min-width: 700px) {
       top: -25.5px;
