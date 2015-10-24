@@ -161,8 +161,8 @@
                 <input class="form__item  form__item--text" type="text" name="travelling-beginning" id="travelling-beginning" placeholder="1 апреля 2015 года" required>
                 <label class="form__label" for="travelling-beginning">Дата выезда</label>
               </div>
-              <div class="form__field">
-                <span class="form__minus"></span><input class="form__item  form__item--number" type="text" name="travelling-duration" id="travelling-duration" placeholder="10 дней" required><span class="form__plus"></span>
+              <div class="form__field  form__field--number">
+                <span class="form__minus"></span><input class="form__item  form__item--number" type="number" name="travelling-duration" id="travelling-duration" placeholder="10 дней" step="1" min="1" max="100" required><span class="form__plus"></span>
                 <label class="form__label" for="travelling-duration">Продолжительность</label>
               </div>
               <div class="form__field">
@@ -172,8 +172,8 @@
             </fieldset>
             <fieldset class="form__fieldset  form__fieldset--gray  form__fieldset--fellow">
               <h3 class="form__subtitle"><span>Количество попутчиков*</span></h3>
-              <div class="form__field  form__field--fellows-number">
-                <input class="form__item  form__item--number" type="text" name="fellow-traveler-number" id="fellow-traveler-number" placeholder="2 чел" required><span class="form__minus"></span><span class="form__plus"></span>
+              <div class="form__field  form__field--number  form__field--fellows-number">
+                <span class="form__minus"></span><input class="form__item  form__item--number" type="number" name="fellow-traveler-number" id="fellow-traveler-number" placeholder="2 чел" step="1" min="1" max="10" required><span class="form__plus"></span>
               </div>
               <div class="form__field  form__field--fellows-data">
                 <div class="form__field  form__field--index-number-col">
@@ -472,7 +472,7 @@
         <button class="btn  btn--bg-green">Ок</button>
     </section>
 
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/numIncrements.js"></script>
 
   </body>
 </html>
