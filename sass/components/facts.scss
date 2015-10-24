@@ -1,70 +1,86 @@
 .facts {
-	display: none;
-	padding-top: 85px;
-	padding-bottom: 85px;
+  display: none;
+  padding-top: 85px;
+  padding-bottom: 85px;
 
-	.wrapper {
-		position: relative;
+  .wrapper {
+    position: relative;
 
-		&:before {
-			content: "";
-			display: block;
-			position: absolute;
-			right: 55%;
-			top: 50%;
-			margin-top: -151px;
-			width: 262px;
-			height: 302px;
-			background-image: url("../img/clock.png");
-		}
-	}
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 55%;
+      top: 50%;
+      margin-top: -151px;
+      width: 262px;
+      height: 302px;
+      background-image: url("../img/clock.png");
+    }
+  }
 
-	&__item {
-		margin-left: 50%;
-		text-align: left;
-	}
+  &__item {
+    margin-left: 50%;
+    text-align: left;
+  }
 
-	&__title {
-		margin-top: 15px;
-		margin-bottom: 33px;
-		font-size: 3rem;
-		line-height: $line-height--large;
-		color: #000000;
-	}
+  &__title {
+    margin-top: 15px;
+    margin-bottom: 19px;
+    width: 55%;
+    font-size: 3rem;
+    line-height: $line-height--large;
+    color: #000000;
+  }
 
-	&__text {
-		margin: 0;
-		margin-bottom: 37px;
-		font-size: 1.4rem;
-		line-height: $line-height--small;
-	}
+  &__text {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    line-height: $line-height--small;
+  }
 
-	&__link {
-		font-weight: $text--normal;
-		font-size: 1.4rem;
-		line-height: $line-height--small;
-		color: $pink;
-		text-decoration: underline;
-		text-transform: none;
-	}
+  &__link {
+    font-weight: $text--normal;
+    font-size: 1.4rem;
+    line-height: $line-height--small;
+    color: $pink;
+    text-decoration: underline;
+    text-transform: none;
+  }
 
-	@media (min-width: 700px) {
-		display: block;
-	}
+  @media (min-width: 700px) {
+    display: block;
+  }
 
-	@media (min-width: 980px) {
-		background-color: $bg-gray;
+  @media (min-width: 980px) {
+    padding-bottom: 115px;
+    background-color: $bg-gray;
 
-		&__item {
-			margin-left: 365px;
-			width: 540px;
-		}
+    &__item {
+      margin-left: 365px;
+      width: 523px;
+    }
 
-		.wrapper {
-			&:before {
-				left: 0;
-				top: 35%;
-			}
-		}
-	}
+    &__title {
+      width: 300px;
+    }
+
+    &__text {
+      font-size: $font-size--medium;
+      line-height: $line-height--large;
+    }
+
+    &__link {
+      font-size: $font-size--medium;
+      line-height: $line-height--large;
+    }
+
+    .wrapper {
+      &:before {
+        left: 0;
+        top: 35%;
+      }
+    }
+  }
 }

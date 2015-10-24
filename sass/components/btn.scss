@@ -1,56 +1,99 @@
 .btn {
-	display: inline-block;
-	padding: 15px $distance;
-	width: 100%;
-	font-weight: $text--bold;
-	font-size: $font-size--medium;
-	line-height: $line-height--large;
-	text-align: center;
-	vertical-align: top;
-	border-radius: 2px;
+  display: inline-block;
+  padding: 15px $distance;
+  width: 100%;
+  font-weight: $text--bold;
+  font-size: $font-size--medium;
+  line-height: $line-height--large;
+  text-align: center;
+  vertical-align: top;
+  border-radius: 2px;
+  outline: none;
 
-	&--bord-white {
-		margin-bottom: $distance + 10px;
-		line-height: 1.8rem;
-		text-transform: none;
-		border-radius: 35px;
-		@include border(($border-width + 1px), $color: $white);
-	}
+  &--bord-white {
+    margin-bottom: $distance + 10px;
+    line-height: 1.8rem;
+    text-transform: none;
+    border-radius: 35px;
+    @include border(($border-width + 1px), $color: $white);
 
-	&--bord-gray {
-		margin-bottom: $distance;
-		font-weight: $text--bold;
-		font-size: $font-size--medium;
-		color: $base-color;
-		background-color: $white;
-		@include border();
-	}
+    &:hover {
+      color: $pink;
+      background-color: $white;
+    }
 
-	&--small {
-		margin-right: $distance;
-		width: 130px;
+    &:active {
+      color: rgba(210, 40, 86, 0.3)
+    }
+  }
 
-		&:nth-child(2n) {
-			margin-right: 0;
-		}
-	}
+  &--bord-gray {
+    margin-bottom: $distance;
+    font-weight: $text--bold;
+    font-size: $font-size--medium;
+    color: $base-color;
+    background-color: $white;
+    @include border();
 
-	&--bg-green {
-		color: $white;
-		text-transform: uppercase;
-		background-color: $btn-green;
-		@include border($color: $btn-green);
-	}
+    @media (max-width: 979px) {
+      &:hover {
+        border-color: $base-color;
+      }
 
-	&--upload {
-		border: none;
-		border-radius: 2px;
-		cursor: pointer;
+      &:active {
+        color: $white;
+        background-color: $base-color;
+      }
+    }
+  }
 
-		@media (min-width: 980px) {
-			color: $white;
-			background-color: $pink;
-		}
-	}
+  &--small {
+    margin-right: $distance;
+    width: 130px;
 
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  &--bg-green {
+    color: $white;
+    text-transform: uppercase;
+    background-color: $btn-green;
+    @include border($color: $btn-green);
+
+    &:hover {
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--upload {
+    margin-bottom: 41px;
+    border-radius: 2px;
+    cursor: pointer;
+
+    @media (min-width: 980px) {
+      padding-top: 17px;
+      padding-bottom: 16px;
+      border: none;
+      color: $white;
+      background-color: $pink;
+
+      &:hover {
+        background-color: darken($pink, 5%);
+      }
+
+      &:active {
+        background-color: rgba(210, 40, 86, 0.3);
+      }
+    }
+  }
+
+  &--disabled {
+    background-color: #e5e5e5;
+  }
 }

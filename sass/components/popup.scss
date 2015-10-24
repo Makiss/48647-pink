@@ -1,52 +1,50 @@
 .popup {
-	display: none;
-	position: absolute;
-	width: 320px;
-	left: 50%;
-	margin-left: -160px;
-	padding-top: 42px;
+  display: none;
+  position: absolute;
+  width: 320px;
+  left: 50%;
+  margin-left: -160px;
+  padding-top: 42px;
+  line-height: $line-height--small;
+  text-align: center;
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
-	
-	line-height: $line-height--small;
-	text-align: center;
-	background-color: $white;
-	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  &--success {
+    top: 1640px;
 
-	&--success {
-		top: 1640px;
+    .btn--bg-green {
+      margin-top: 50px;
+    }
+  }
 
-		.btn--bg-green {
-			margin-top: 50px;
-		}
-	}
+  &--failure {
+    top: 1165px;
+    padding-right: $distance;
+    padding-left: $distance;
+    padding-bottom: 50px;
+  }
 
-	&--failure {
-		top: 1165px;
-		padding-right: $distance;
-		padding-left: $distance;
-		padding-bottom: 50px;
-	}
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: $text--bold;
+    font-size: $font-size--medium;
+  }
 
-	&__title {
-		margin: 0;
-		margin-bottom: 30px;
-		font-weight: $text--bold;
-		font-size: $font-size--medium;
-	}
+  &__message {
+    margin-bottom: 30px;
+  }
 
-	&__message {
-		margin-bottom: 30px;
-	}
+  &__content-wrapper {
+    padding-right: $distance;
+    padding-left: $distance;
+  }
 
-	&__content-wrapper {
-		padding-right: $distance;
-		padding-left: $distance;
-	}
-
-	&__button-wrapper {
-		padding-right: $distance;
-		padding-left: $distance;
-		padding-bottom: 50px;
-		background-color: $bg-gray;
-	}
+  &__button-wrapper {
+    padding-right: $distance;
+    padding-left: $distance;
+    padding-bottom: 50px;
+    background-color: $bg-gray;
+  }
 }

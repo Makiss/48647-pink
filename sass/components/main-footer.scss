@@ -1,33 +1,57 @@
 .main-footer {
-	padding-top: 32px;
-	padding-bottom: 16px;
+  padding-top: 32px;
+  padding-bottom: 16px;
 
-	&--index {
-		display: none;
-	}
+  &--index {
+    display: none;
+  }
 
-	&__copyright {
-		margin-bottom: 30px;
-	}
+  &__copyright {
+    margin-bottom: 30px;
+  }
 
-	@media (min-width: 700px) {
-		padding-top: 35px;
-		padding-bottom: 35px;
+  &__link {
+    &--ha-logo {
+      display: inline-block;
+      margin-left: 11px;
+      vertical-align: middle;
 
-		&--index {
-			display: block;
-		}
+      &:hover {
+        svg {
+          fill: $base-color;
+        }
+      }
 
-		&__copyright {
-			float: right;
-			margin-bottom: 0;
-			margin-top: 5px;
-		}
+      &:active {
+        svg {
+          fill: rgba(40, 54, 69, 0.3);
+        }
+      }
+    }
+  }
 
-	}
+  @media (min-width: 700px) {
+    padding-top: 35px;
+    padding-bottom: 35px;
 
-	@media (min-width: 980px) {
-		padding-top: 73px;
-		padding-bottom: 73px;
-	}
+    &--index {
+      display: block;
+    }
+
+    &__copyright {
+      float: right;
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+
+  }
+
+  @media (min-width: 980px) {
+    padding-top: 73px;
+    padding-bottom: 73px;
+
+    &__copyright {
+      font-size: $font-size--medium;
+    }
+  }
 }

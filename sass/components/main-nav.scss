@@ -1,138 +1,205 @@
 .main-nav {
 
-	@media (min-width: 980px) {
-		float: right;
-		padding-top: 18px;
-		width: 700px;
-		text-align: right;
-	}
+  @media (min-width: 980px) {
+    float: right;
+    padding-top: 18px;
+    width: 700px;
+    text-align: right;
+  }
 	
-	&__list {
-		display: none;
-		position: absolute;
-		left: 0;
-		top: 100%;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		background-color: $base-color;
+  &__list {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: $base-color;
 
-		@media (min-width: 980px) {
-			display: block;
-			position: static;
-			background-color: transparent;
-		}
-	}
+    @media (min-width: 980px) {
+      display: block;
+      position: static;
+      background-color: transparent;
+    }
+  }
 
-	&__item {
-		display: block;
-		margin-top: 1px;
-		padding-top: 19px;
-		padding-bottom: 17px;
-		width: 100%;
-		box-shadow: 0 1px $black;
-		box-shadow: 0 1px rgba(255, 255, 255, 0.15) inset;
+  &__item {
+    display: block;
+    margin-top: 1px;
+    padding-top: 19px;
+    padding-bottom: 17px;
+    width: 100%;
+    box-shadow: 0 1px $black,
+                0 1px rgba(255, 255, 255, 0.15) inset;
 
-		@media (min-width: 980px) {
-			display: inline-block;
-			margin: 0;
-			margin-right: 70px;
-			padding: 0;
-			width: auto;
-			box-shadow: none;
+    @media (min-width: 980px) {
+      display: inline-block;
+      position: relative;
+      margin: 0;
+      margin-right: 70px;
+      padding: 0;
+      width: auto;
+      box-shadow: none;
 
-			&:last-of-type {
-				margin-right: 0;
-			}
-		}
-	}
+      &:hover {
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -5px;
+          height: 2px;
+          width: 100%;
+          background-color: $white;
+        }
+      }
 
-	&__link{
-		line-height: 3.2rem;
+      &:active {
+        &:after {
+          display: none;
+        }
+      }
 
-		@media (min-width: 980px) {
-			font-weight: $text--normal;
-			line-height: 1.8rem;
-			text-transform: none;
-		}
-	}
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
 
-	&__toggle {
-		position: relative; 
-		float: right;
-		width: 50px;
-		height:24px;
+  &__link{
+    line-height: 3.2rem;
 
-		@media (min-width: 700px) {
-			margin-top: 17px;
-		}
+    &:hover {
+      color: $pink;
+    }
 
-		@media (min-width: 980px) {
-			display: none;
-		}
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
 
-		>span {
-			position: absolute;
-			left: 0;
-			top: 50%;
-			margin-top: -2px;
-			width: 100%;
-			height: 4px;
-			background: $white;
-		}
+    @media (min-width: 980px) {
+      font-weight: $text--normal;
+      line-height: 1.8rem;
+      text-transform: none;
 
-		&::after,
-		&::before {
-			content: "";
-			position: absolute;
-			left: 0;
-			width: 100%;
-			height: 4px;
-			background: $white;
-		}
+      &:hover {
+        color: $white;
+      }
 
-		&::after {
-			bottom: 0;
-		}
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
 
-		&::before {
-			top: 0;
-		}
-	}
+  &__toggle {
+    position: relative; 
+    float: right;
+    width: 50px;
+    height:24px;
 
-	&__toggle-close {
-		position: relative; 
-		float: right;
-		width: 23px;
-		height: 22px;
+    &:hover {
+      >span,
+      &:before,
+      &:after {
+        background-color: $pink;
+      }
+    }
 
-		@media (min-width: 700px) {
-			margin-top: 17px;
-		}
+    &:active {
+      >span,
+      &:before,
+      &:after {
+        background-color: rgba(210, 40, 86, 0.3);
+      }
+    }
 
-		>span {
-			display: none;
-		}
+    @media (min-width: 700px) {
+      margin-top: 17px;
+    }
 
-		&::after,
-		&::before {
-			content: "";
-			display: block;
-			position: absolute;
-			left: -10px;
-			top: 50%;
-			margin-top: -2px;
-			width: 31px;
-			height: 4px;
-			background-color: $white;
-		}
+    @media (min-width: 980px) {
+      display: none;
+    }
 
-		&::after {
-			transform: rotate(-45deg);
-		}
+    >span {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -2px;
+      width: 100%;
+      height: 4px;
+      background: $white;
+    }
 
-		&::before {
-			transform: rotate(45deg);
-		}
-	}
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: $white;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    &::before {
+      top: 0;
+    }
+  }
+
+  &__toggle-close {
+    position: relative; 
+    float: right;
+    width: 23px;
+    height: 22px;
+
+    &:hover {
+      >span,
+      &:before,
+      &:after {
+        background-color: $pink;
+      }
+    }
+
+    &:active {
+      >span,
+      &:before,
+      &:after {
+        background-color: rgba(210, 40, 86, 0.3);
+      }
+    }
+
+    @media (min-width: 700px) {
+      margin-top: 17px;
+    }
+
+    >span {
+      display: none;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      margin-top: -2px;
+      width: 31px;
+      height: 4px;
+      background-color: $white;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
 }

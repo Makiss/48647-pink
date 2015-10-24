@@ -1,130 +1,159 @@
 .table {
-	margin-bottom: 40px;
-	width: 300%;
-	line-height: $line-height--large;
-	text-transform: uppercase;
-	border-collapse: collapse;
+  margin-bottom: 40px;
+  width: 300%;
+  line-height: $line-height--large;
+  text-transform: uppercase;
+  border-collapse: collapse;
 
-	&__head-cell {
-		padding-top: 19px;
-		padding-bottom: $distance;
-		width: 33.3%; 
-		font-weight: $text--bold;
-		font-size: $font-size--medium;
-		text-align: center;
-		@include border($width: $border-width, $color: $border-gray);
-		border-top: none;
-		border-bottom: none;
+  &__head-cell {
+    padding-top: 19px;
+    padding-bottom: $distance;
+    width: 33.3%; 
+    font-weight: $text--bold;
+    font-size: $font-size--medium;
+    text-align: center;
+    @include border($width: $border-width, $color: $border-gray);
+    border-top: none;
+    border-bottom: none;
 
-		&--hit {
-			position: relative;
-			overflow: hidden;
+    &--hit {
+      position: relative;
+      overflow: hidden;
 
-			&::before {
-				content: "Хит";
-				display: block;
-				position: absolute;
-				top: 5px;
-				left: -30px;
-				width: 105px;
-				height: 30px;
-				font-weight: $text--semibold;
-				font-size: $font-size--small;
-				line-height: $line-height--large;
-				color: $white;
-				text-align: center;
-				text-transform: uppercase;
-				background-color: $pink;
-				transform: rotate(-45deg);
-			}
-		}
+      &::before {
+        content: "Хит";
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: -30px;
+        width: 105px;
+        height: 29px;
+        font-weight: $text--semibold;
+        font-size: $font-size--small;
+        line-height: $line-height--large;
+        color: $white;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: $pink;
+        transform: rotate(-45deg);
+      }
+    }
 
-		&--dark {
-			color: $white;
-			background-color: $base-color;
-		}
-	}
+    &--dark {
+      color: $white;
+      background-color: $base-color;
+    }
+  }
 
-	&__price {
-		font-weight: $text--light;
-		font-size: $font-size--large;
-	}
+  &__price {
+    font-weight: $text--light;
+    font-size: $font-size--large;
+  }
 
-	&__cell--additional,
-	&__head-cell--additional {
-		display: none;
-	}
+  &__cell--additional,
+  &__head-cell--additional {
+    display: none;
+  }
 
-	&__cell {
-		position: relative;
-		padding-left: 22px;
-		padding-right: 18px;
-		padding-top: 14px;
-		padding-bottom: 15px;
-		text-align: left;
-		@include border($width: $border-width, $color: $border-gray);
-		border-top: none;
-		background-color: #ffffff;
-	}
+  &__cell {
+    position: relative;
+    padding-left: 22px;
+    padding-right: 18px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    text-align: left;
+    @include border($width: $border-width, $color: $border-gray);
+    border-top: none;
+    background-color: #ffffff;
+  }
 
-	.icon {
-		right: 18px;
-		top: 50%;
+  .icon {
+    right: 18px;
+    top: 50%;
 
-		&--check {
-			margin-top: -11px;
+    &--check {
+      margin-top: -11px;
 
-			&:before,
-			&:after {
-				background-color: $check-green;
-			}
-		}
+      &:before,
+      &:after {
+        background-color: $check-green;
+      }
+    }
 
-		&--cross {
-			margin-top: -13px;
-		}
-	}
+    &--cross {
+      margin-top: -13px;
+    }
+  }
 
-	@media (min-width: 700px) {
-		width: 100%;
-		transform: none !important;
+  @media (min-width: 700px) {
+    margin-bottom: 66px;
+    width: 100%;
 
-		&__head-cell {
-			width: 25%;
-		}
+    &__head-cell {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      width: 25%;
+      font-size: 1.6rem;
+    }
 
-		&__cell {
-			padding-left: 15px;
-			padding-right: 15px;
-			text-transform: none;
-			text-indent: -9999px;
-		}
+    &__price {
+      font-size: $font-size--medium;
+    }
 
-		&__cell--additional,
-		&__head-cell--additional {
-			display: table-cell;
-		}
+    &__cell {
+      padding-top: 12px;
+      padding-bottom: 11px;
+      padding-left: 15px;
+      padding-right: 15px;
+      text-transform: none;
+      text-indent: -9999px;
+    }
 
-		&__head-cell--additional {
-			border: none;
-		}
+    &__cell--additional,
+    &__head-cell--additional {
+      display: table-cell;
+    }
 
-		&__cell--additional {
-			margin-bottom: -2px;
-			text-indent: inherit;
-			border-top: 2px solid $border-gray;
-		}
+    &__head-cell--additional {
+      border: none;
+    }
 
-		.icon {
-			right: 50%;
+    &__cell--additional {
+      margin-bottom: -2px;
+      text-indent: inherit;
+      border-top: 2px solid $border-gray;
+    }
 
-			&--check {
-				margin-right: -14.5px;
-			}
+    .icon {
+      right: 50%;
 
-			&--cross {
-				margin-right: -13px;
-			}
-		}
-	}
+      &--check {
+        margin-right: -14.5px;
+      }
+
+      &--cross {
+        margin-right: -13px;
+      }
+    }
+  }
+
+  @media (min-width: 980px) {
+    margin-bottom: 95px;
+
+    &__head-cell {
+      padding-top: 19px;
+      padding-bottom: 19px;
+      font-size: 1.8rem;
+    }
+
+    &__price {
+      font-size: $font-size--large;
+    }
+
+    &__cell {
+      padding-top: 16px;
+      padding-bottom: 13px;
+      font-size: $font-size--medium;
+    }
+  }
 }

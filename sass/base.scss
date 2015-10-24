@@ -1,91 +1,91 @@
 html {
-	font-size: 10px;
-	box-sizing: border-box;
+  font-size: 10px;
+  box-sizing: border-box;
 }
 
-*, 
+*,
 *::after,
 *::before {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-	font-family: $font-family;
-	font-weight: $text--normal;
-	font-size: $font-size--small;
-	line-height: $line-height--medium;
-	color: $base-color;
-	text-align: center;
+  font-family: $font-family;
+  font-weight: $text--normal;
+  font-size: $font-size--small;
+  line-height: $line-height--medium;
+  color: $base-color;
+  text-align: center;
 }
 
 h1 {
-	font-weight: $text--light;
-	font-size: $font-size--large;
-	line-height: $line-height--small;
-	color: $white;
+  font-weight: $text--light;
+  font-size: $font-size--large;
+  line-height: $line-height--small;
+  color: $white;
 }
 
 h2 {
-	font-weight: $text--bold;
-	font-size: $font-size--medium;
-	line-height: $line-height--small;
-	color: $black;
+  font-weight: $text--bold;
+  font-size: $font-size--medium;
+  line-height: $line-height--small;
+  color: $black;
 
-	a {
-		color: $base-color;
-		text-transform: none;
-	}
+  a {
+    color: $base-color;
+    text-transform: none;
+  }
 }
 
 h3 {
-	font-weight: $text--bold;
-	font-size: $font-size--medium;
-	line-height: $line-height--large;
-	color: $base-color;
+  font-weight: $text--bold;
+  font-size: $font-size--medium;
+  line-height: $line-height--large;
+  color: $base-color;
 }
 
 a {
-	font-weight: $text--bold;
-	font-size: $font-size--medium;
-	color: $white;
-	text-decoration: none;
-	text-transform: uppercase;
+  font-weight: $text--bold;
+  font-size: $font-size--medium;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 img {
-	display: block;
-	width: 100%;
-	height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 input {
-	font-size: $font-size--medium;
+  font-size: $font-size--medium;
+  outline: none;
 }
 
 label {
-	color: $pink;
-	text-transform: uppercase;
+  color: $pink;
+  text-transform: uppercase;
 }
 
 .wrapper {
-	padding-left: $distance;
-	padding-right: $distance;
-	width: 100%;
-	@include clearfix();
+  padding-left: $distance;
+  padding-right: $distance;
+  width: 100%;
+  @include clearfix();
 
-	&--form {
-		padding: 0;
-	}
+  &--form {
+    padding: 0;
+  }
 
-	@media (min-width: 700px) {
-		padding-left: 40px;
-		padding-right: 40px;
-	}
+  @media (min-width: 700px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
-	@media (min-width: 980px) {
-		margin: 0 auto;
-		padding: 0;
-		width: 940px;
-	}
+  @media (min-width: 980px) {
+    margin: 0 auto;
+    padding: 0;
+    width: 940px;
+  }
 }
-

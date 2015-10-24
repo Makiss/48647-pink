@@ -1,15 +1,25 @@
 .footnote {
-	margin: 0;
-	line-height: $line-height--large;
-	text-transform: uppercase;
+  margin: 0;
+  line-height: $line-height--large;
+  text-transform: uppercase;
 
-	span {
-		color: $pink;
-	}
+  &__star {
+    color: $pink;
+  }
 
-	@media (min-width: 700px) {
-		float: right;
-		height:64px;
-		line-height: 64px;
-	}
+  .disappear-text {
+    display: none;
+  }
+
+  @media (min-width: 700px) {
+    float: right;
+    height:64px;
+    line-height: 64px;
+  }
+
+  @media (min-width: 980px) {
+    .disappear-text {
+      display: inline;
+    }
+  }
 }
