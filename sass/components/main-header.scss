@@ -8,6 +8,10 @@
   background-color: rgba(0, 0, 0, 0.3);
   @include clearfix;
 
+  &--open-menu {
+    background-color: $base-color;
+  }
+
   @media (min-width: 700px) {
     padding-left: 0;
     padding-right: 0;
