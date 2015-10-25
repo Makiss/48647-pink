@@ -638,7 +638,6 @@
     margin-right: 39px;
     margin-top: 23px;
     width: 67px;
-    height: 67px;
     vertical-align: top;
 
     &:nth-of-type(3n) {
@@ -647,6 +646,8 @@
 
     img {
       margin-bottom: 8px;
+      width: 67px;
+      height: 67px;
     }
 
     @media (min-width: 425px) {
@@ -684,12 +685,14 @@
     @media (min-width: 700px) {
       margin-top: 40px;
       width: 120px;
-      height: 120px;
+
+      img {
+        width: 120px;
+        height: 120px;
+      }
     }
 
     @media (min-width: 707px) {
-      width: 120px;
-      height: 120px;
 
       &:nth-of-type(n) {
         margin-right: 68px;

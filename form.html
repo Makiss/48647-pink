@@ -250,42 +250,42 @@
               <div class="form__upload-area">
                 <div class="form__uploaded-file">
                   <div class="form__delete-file"></div>
-                  <img src="img/upload-image1.jpg" width="67" height="68">
+                  <img src="img/upload-image1.jpg" alt="img-1.jpg" width="67" height="67">
                   <span class="form__uploaded-descr">img-1.jpg</span>
                 </div>
                 <div class="form__uploaded-file">
                   <div class="form__delete-file"></div>
-                  <img src="img/upload-image2.jpg" width="68" height="68">
+                  <img src="img/upload-image2.jpg" alt="img-2.jpg" width="67" height="67">
                   <span class="form__uploaded-descr">img-2.jpg</span>
                 </div>
                 <div class="form__uploaded-file">
                   <div class="form__delete-file"></div>
-                  <img src="img/upload-image3.jpg" width="67" height="68">
+                  <img src="img/upload-image3.jpg" alt="img-3.jpg" width="67" height="67">
                   <span class="form__uploaded-descr">img-3.jpg</span>
                 </div>
                 <div class="form__uploaded-file">
                   <div class="form__delete-file"></div>
-                  <img src="img/upload-image4.jpg" width="67" height="67">
+                  <img src="img/upload-image4.jpg" alt="img-4.jpg" width="67" height="67">
                   <span class="form__uploaded-descr">img-4.jpg</span>
                 </div>
                 <div class="form__uploaded-file">
                   <div class="form__delete-file"></div>
-                  <img src="img/upload-image5.jpg" width="68" height="67">
+                  <img src="img/upload-image5.jpg" alt="img-5.jpg" width="67" height="67">
                   <span class="form__uploaded-descr">img-5.jpg</span>
                 </div>
                 <div class="form__uploaded-file">
                   <div class="form__delete-file"></div>
-                  <img src="img/upload-image6.jpg" width="67" height="67">
+                  <img src="img/upload-image6.jpg" alt="img-6.jpg" width="67" height="67">
                   <span class="form__uploaded-descr">img-6.jpg</span>
                 </div>
                 <div class="form__uploaded-file">
                   <div class="form__delete-file"></div>
-                  <img src="img/upload-image7.jpg" width="68" height="67">
+                  <img src="img/upload-image7.jpg" alt="img-7.jpg" width="67" height="67">
                   <span class="form__uploaded-descr">img-7.jpg</span>
                 </div>
                 <div class="form__uploaded-file">
                   <div class="form__delete-file"></div>
-                  <img src="img/upload-image8.jpg" width="68" height="67">
+                  <img src="img/upload-image8.jpg" alt="img-8.jpg" width="67" height="67">
                   <span class="form__uploaded-descr">img-8.jpg</span>
                 </div>
               </div>
@@ -472,6 +472,13 @@
         <button class="btn  btn--bg-green">Ок</button>
     </section>
 
+    <script id="image-template" type="text/html">
+      <div class="form__delete-file"></div>
+      <img src="{{image}}" alt="{{name}}">
+      <span class="form__uploaded-descr">{{name}}</span>
+    </script>
+
+    <script src="js/vendors/mustache-2.2.0.min.js"></script>
     <script src="js/form.js"></script>
     <script src="js/inputNumChanger.js"></script>
 
