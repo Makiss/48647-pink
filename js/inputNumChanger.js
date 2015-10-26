@@ -1,5 +1,8 @@
 (function () {
-  var formNumberField = document.querySelectorAll(".form__field--number");
+  var formFellowFieldset = document.querySelector(".form__fieldset--fellow");
+  var formNumberField = formFellowFieldset.querySelectorAll(".form__field--number");
+  var html = document.querySelector("#fellow-template").innerHTML;
+
   for (var i = 0; i < formNumberField.length; i++) {
     initNumberField(formNumberField[i]);
   }
@@ -8,10 +11,10 @@
     var minus = parent.querySelector(".form__minus");
     var plus = parent.querySelector(".form__plus");
 
-    minus.addEventListener("click", function() {
+    minus.addEventListener("tap", function() {
       changeNumber(false);
     });
-    plus.addEventListener("click", function() {
+    plus.addEventListener("tap", function() {
       changeNumber(true);
     });
 
@@ -24,9 +27,18 @@
 
       if (operation) {
         input.value = value + 1;
+        if (input.classList.contains("form__item--fellow-number")) {
+          var div = document.createElement("div");
+          div.classList.add("form__field", "form__field--fellows-data");
+          div.innerHTML = html;
+          formFellowFieldset.appendChild(div);
+        }
       } else {
-      	if (value > 1) {
-          input.value = value - 1;
+          if (value > 0) {
+            input.value = value - 1;
+          if (input.classList.contains("form__item--fellow-number")) {
+            formFellowFieldset.removeChild(formFellowFieldset.lastElementChild);
+          }
         }
       } 
     }

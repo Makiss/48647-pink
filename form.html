@@ -173,12 +173,12 @@
             <fieldset class="form__fieldset  form__fieldset--gray  form__fieldset--fellow">
               <h3 class="form__subtitle"><span>Количество попутчиков*</span></h3>
               <div class="form__field  form__field--number  form__field--fellows-number">
-                <span class="form__minus"></span><input class="form__item  form__item--number" type="number" name="fellow-traveler-number" id="fellow-traveler-number" placeholder="2 чел" step="1" min="1" max="10" required><span class="form__plus"></span>
+                <span class="form__minus"></span><input class="form__item  form__item--number  form__item--fellow-number" type="number" name="fellow-traveler-number" id="fellow-traveler-number" value="2" step="1" min="1" max="10" required><span class="form__plus"></span>
               </div>
               <div class="form__field  form__field--fellows-data">
                 <div class="form__field  form__field--index-number-col">
                   <span class="form__number-symbol">№</span>
-                  <span class="form__index-number">1</span>
+                  <span class="form__index-number"></span>
                 </div>
                 <div class="form__field  form__field--col">
                   <div class="form__field">
@@ -197,7 +197,7 @@
               <div class="form__field  form__field--fellows-data">
                 <div class="form__field  form__field--index-number-col">
                   <span class="form__number-symbol">№</span>
-                  <span class="form__index-number">2</span>
+                  <span class="form__index-number"></span>
                 </div>
                 <div class="form-field  form__field--col">
                   <div class="form__field">
@@ -247,48 +247,7 @@
                 Загрузить фото
                 <input class="form__item  form__item--file" id="upload_photo" type="file" name="photo" value="Загрузить фото" required multiple>
               </label>
-              <div class="form__upload-area">
-                <div class="form__uploaded-file">
-                  <div class="form__delete-file"></div>
-                  <img src="img/upload-image1.jpg" alt="img-1.jpg" width="67" height="67">
-                  <span class="form__uploaded-descr">img-1.jpg</span>
-                </div>
-                <div class="form__uploaded-file">
-                  <div class="form__delete-file"></div>
-                  <img src="img/upload-image2.jpg" alt="img-2.jpg" width="67" height="67">
-                  <span class="form__uploaded-descr">img-2.jpg</span>
-                </div>
-                <div class="form__uploaded-file">
-                  <div class="form__delete-file"></div>
-                  <img src="img/upload-image3.jpg" alt="img-3.jpg" width="67" height="67">
-                  <span class="form__uploaded-descr">img-3.jpg</span>
-                </div>
-                <div class="form__uploaded-file">
-                  <div class="form__delete-file"></div>
-                  <img src="img/upload-image4.jpg" alt="img-4.jpg" width="67" height="67">
-                  <span class="form__uploaded-descr">img-4.jpg</span>
-                </div>
-                <div class="form__uploaded-file">
-                  <div class="form__delete-file"></div>
-                  <img src="img/upload-image5.jpg" alt="img-5.jpg" width="67" height="67">
-                  <span class="form__uploaded-descr">img-5.jpg</span>
-                </div>
-                <div class="form__uploaded-file">
-                  <div class="form__delete-file"></div>
-                  <img src="img/upload-image6.jpg" alt="img-6.jpg" width="67" height="67">
-                  <span class="form__uploaded-descr">img-6.jpg</span>
-                </div>
-                <div class="form__uploaded-file">
-                  <div class="form__delete-file"></div>
-                  <img src="img/upload-image7.jpg" alt="img-7.jpg" width="67" height="67">
-                  <span class="form__uploaded-descr">img-7.jpg</span>
-                </div>
-                <div class="form__uploaded-file">
-                  <div class="form__delete-file"></div>
-                  <img src="img/upload-image8.jpg" alt="img-8.jpg" width="67" height="67">
-                  <span class="form__uploaded-descr">img-8.jpg</span>
-                </div>
-              </div>
+              <div class="form__upload-area"></div>
             </fieldset>
             <fieldset class="form__fieldset  form__fieldset--submit">
               <input class="btn  btn--bg-green" type="submit" value="Отправить форму">
@@ -476,6 +435,28 @@
       <div class="form__delete-file"></div>
       <img src="{{image}}" alt="{{name}}">
       <span class="form__uploaded-descr">{{name}}</span>
+    </script>
+
+    <script id="fellow-template" type="text/html">
+
+        <div class="form__field  form__field--index-number-col">
+          <span class="form__number-symbol">№</span>
+          <span class="form__index-number"></span>
+        </div>
+        <div class="form-field  form__field--col">
+          <div class="form__field">
+            <label class="form__label  form__label--person-data" for="fellow-traveler2-name">Имя*</label>
+            <input class="form__item  form__item--text  form__item--with-index" type="text" name="fellow-traveler2-name" id="fellow-traveler2-name" placeholder="Введите ваше имя" required>
+          </div>
+          <div class="form__field">
+            <label class="form__label  form__label--person-data" for="fellow-traveler2-nickname">Прозвище:</label>
+            <input class="form__item  form__item--text" type="text" name="fellow-traveler2-nickname" id="fellow-traveler2-nickname" placeholder="Ну как же без этого!">
+          </div>
+        </div>
+        <div class="form__field  form__field--delete-item">
+          <a href="#">Удалить</a>
+        </div>
+
     </script>
 
     <script src="bower_components/mustache.js/mustache.min.js"></script>

@@ -290,6 +290,7 @@
     }
 
     &--index-number-col {
+
       @media (min-width: 700px) {
         margin-right: $distance;
       }
@@ -383,6 +384,12 @@
     border-radius: 2px 0 0 2px;
     @include border();
     border-right: none;
+    counter-reset: list;
+
+    &::before {
+      counter-increment: list;
+      content: counter(list);
+    }
 
     @media (min-width: 700px) {
       border-radius: 2px;
