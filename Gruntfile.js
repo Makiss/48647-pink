@@ -7,24 +7,21 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     clean: {
-      build: ["build"]
+      build: ['build']
     },
 
     copy: {
       build: {
         files: [{
           expand: true,
-          cwd: "source",
+          cwd: 'source',
           src: [
-            "img/**",
-            "js/**",
-            "index.html",
-            "form.html",
-            "blog.html",
-            "post.html"
-          ],
-          dest: "build"
-        }]
+            'img/**',
+            'index.html',
+            'form.html',
+            'blog.html',
+            'post.html'],
+          dest: 'build'}]
       }
     },
 
@@ -74,7 +71,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ["build/img/**/*.{png,jpg,gif,svg}"]
+          src: ['build/img/**/*.{png,jpg,gif,svg}']
         }]
       }
     },
@@ -89,10 +86,29 @@ module.exports = function(grunt) {
       },
       html: {
         files: {
-          "build/index.min.html": "build/index.html",
-          "build/form.min.html": "build/form.html",
-          "build/blog.min.html": "build/blog.html",
-          "build/post.min.html": "build/post.html"
+          'build/index.min.html': 'build/index.html',
+          'build/form.min.html': 'build/form.html',
+          'build/blog.min.html': 'build/blog.html',
+          'build/post.min.html': 'build/post.html'        }
+      }
+    },
+
+    concat: {
+      dist: {
+        src: ['source/js/form.js', 
+              'source/js/hamburger.js', 
+              'source/js/inputNumChanger.js',
+              'bower_components/mustache.js/mustache.min.js',
+              'bower_components/tap/dist/tap.min.js'
+            ],
+        dest: 'build/js/script.js'
+      },
+    },
+
+    uglify: {
+      build: {
+        files: {
+          'build/js/script.min.js': 'build/js/script.js'
         }
       }
     },
@@ -105,13 +121,19 @@ module.exports = function(grunt) {
           spawn: false,
           livereload: true
         }
+      },
+      js: {
+        files: ['source/js/**/*.js',
+                'bower_components/**/*.js'
+              ],
+        tasks: ['concat', 'uglify']
       }
     },
 
     csscomb: {
       style: {
       expand: true,
-      src: ["source/sass/**/*.scss"]
+      src: ['source/sass/**/*.scss']
       }
     }
   };
@@ -128,6 +150,8 @@ module.exports = function(grunt) {
       'postcss',
       'cssmin',
       'imagemin',
-      'htmlmin'
+      'htmlmin',
+      'concat',
+      'uglify'
     ]);
 };
