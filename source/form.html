@@ -119,171 +119,142 @@
     </header>
 
     <main class="main-content">
-      <div class="main-content__header  main-content__header--more-bg">
-        <div class="wrapper">
-          <h1 class="main-content__title">Взгляните на жизнь иначе!</h1>
-          <div class="app-download">
-            <a class="btn  btn--bord-white" href="#">Скачать приложение</a>
-            <div class="app-download__platform">
-              <a class="app-download__link" href="#">
-                <img src="img/apple-logo.svg" width="46" height="57">
-              </a>
-              <a class="app-download__link" href="#">
-                <img src="img/android-logo.svg" width="42" height="47">
-              </a>
-              <a class="app-download__link" href="#">
-                <img src="img/microsoft-logo.svg" width="44" height="42">
-              </a>
-            </div>
-            <p class="app-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X, Windows&nbsp;8</p>
-          </div>
-        </div>
+      <div class="main-content__header">
+          <h1 class="main-content__title">Конкурс на самое обезбашенное путешествие с Пинк</h1>
       </div>
-      <div class="features">
-        <div class="features__promo">
-          <div class="wrapper">
-            <p>Устали от серости мегаполиса?</p>
-            <p>Нам есть что Вам предложить!</p>
-          </div>
-        </div>
-        <div class="features__group">
-          <div class="wrapper">
-            <section class="features__item">
-              <div class="features__picture  features__picture--white-black">
-                <picture>
-                  <source width="292" media="(min-width: 980px)" srcset="img/iphone-screen-desktop-1@1x.png 1x,img/iphone-screen-desktop-1@2x.png 2x">
-                  <source width="268" media="(min-width: 700px)" srcset="img/iphone-screen-tablet-1@1x.png 1x,img/iphone-screen-tablet-1@2x.png 2x">
-                  <img width="142" src="img/iphone-screen-mobile-1@1x.png" srcset="img/iphone-screen-mobile-1@2x.png 2x,img/iphone-screen-mobile-1@3x.png 3x" alt="Фото со смайликом">
-                </picture>
+      <div class="wrapper  wrapper--form">
+        <div class="form-content">
+          <p class="form-content__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="disappear-text"> Пожалуйста, заполните форму ниже:</span></p>
+          <form class="form" action="/echo" method="get" enctype="multipart/formdata">
+            <fieldset class="form__fieldset  form__fieldset--user-data">
+              <div class="form__field">
+                <label class="form__label  form__label--person-data" for="first-name">Имя:*</label>
+                <input class="form__item  form__item--text" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя" required autofocus>
               </div>
-              <h2 class="features__title">Поднимает настроение</h2>
-              <p class="features__text">Приложение позволяет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </section>
-            <section class="features__item">
-              <div class="features__picture  features__picture--pink">
-                <picture>
-                  <source width="292" media="(min-width: 980px)" srcset="img/iphone-screen-desktop-2@1x.png 1x,img/iphone-screen-desktop-2@2x.png 2x">
-                  <source width="268" media="(min-width: 700px)" srcset="img/iphone-screen-tablet-2@1x.png 1x,img/iphone-screen-tablet-2@2x.png 2x">
-                  <img width="142" src="img/iphone-screen-mobile-2@1x.png" srcset="img/iphone-screen-mobile-2@2x.png 2x,img/iphone-screen-mobile-2@3x.png 3x" alt="Фото со смайликом">
-                </picture>
+              <div class="form__field">
+                <label class="form__label  form__label--person-data" for="last-name">Фамилия:*</label>
+                <input class="form__item  form__item--text" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию" required>
               </div>
-              <h2 class="features__title">Меняет мир вокруг</h2>
-              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </section>
-            <section class="features__item">
-              <div class="features__picture  features__picture--pink-smile">
-                <picture>
-                  <source width="292" media="(min-width: 980px)" srcset="img/iphone-screen-desktop-3@1x.png 1x,img/iphone-screen-desktop-3@2x.png 2x">
-                  <source width="268" media="(min-width: 700px)" srcset="img/iphone-screen-tablet-3@1x.png 1x,img/iphone-screen-tablet-3@2x.png 2x">
-                  <img width="142" src="img/iphone-screen-mobile-3@1x.png" srcset="img/iphone-screen-mobile-3@2x.png 2x,img/iphone-screen-mobile-3@3x.png 3x" alt="Фото со смайликом">
-                </picture>
+              <div class="form__field">
+                <label class="form__label  form__label--person-data" for="patronymic">Отчество:*</label>
+                <input class="form__item  form__item--text" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
               </div>
-              <h2 class="features__title">Заводит новых друзей</h2>
-              <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </section>
-          </div>
-        </div>
-      </div>
-      <div class="facts">
-        <div class="wrapper">
-          <div class="facts__item">
-            <h2 class="facts__title">Эффект на 24 часа</h2>
-            <p class="facts__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="facts__link" href="#">Узнать больше об исследовании</a>
-          </div>
-        </div>
-      </div>
-      <div class="wrapper">
-        <div class="reviews">
-          <input type="radio" name="controls1" id="btn1" checked>
-          <input type="radio" name="controls1" id="btn2">
-          <input type="radio" name="controls1" id="btn3">
-          <a href="#" class="arrow  arrow--left"></a>
-          <a href="#" class="arrow  arrow--right"></a>
-          <div class="reviews__content">
-            <figure class="reviews__item  reviews__item1">
-              <figcaption class="reviews__descr">Николай Петров<br><span>25 лет, водитель трамвая</span></figcaption>
-              <p>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-            </figure>
-            <figure class="reviews__item  reviews__item2">
-              <figcaption class="reviews__descr">Максим Сёмушкин<br><span>26 лет, студент интенсива Html Academy</span></figcaption>
-              <p>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-            </figure>
-            <figure class="reviews__item  reviews__item3">
-              <figcaption class="reviews__descr">Евгений Сергеев<br><span>32 года, наставник Html Academy</span></figcaption>
-              <p>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-            </figure>
-          </div>
-          <div class="controls-points">
-            <label class="controls-points__item" for="btn1"></label>
-            <label class="controls-points__item" for="btn2"></label>
-            <label class="controls-points__item" for="btn3"></label>
-          </div>
-        </div>
-      </div>
-      <div class="main-price">
-        <div class="wrapper">
-          <input type="radio" name="controls2" id="btn4">
-          <input type="radio" name="controls2" id="btn5" checked>
-          <input type="radio" name="controls2" id="btn6">
-          <table class="table">
-            <tr class="table__head-row">
-              <th class="table__head-cell  table__head-cell--additional"></th>
-  	          <th class="table__head-cell  table__head-cell--dark">База<br><span class="table__price">1,99 USD</span></th>
-  	          <th class="table__head-cell  table__head-cell--hit  table__head-cell--dark">Стандарт<br><span class="table__price">3,99 USD</span></th>
-  	          <th class="table__head-cell  table__head-cell--dark">Анлим<br><span class="table__price">9,99 USD</span></th>
-            </tr>
-            <tr>
-              <td class="table__cell  table__cell--additional">Розовый фильтр</td>
-  	          <td class="table__cell">Розовый фильтр<i class="icon  icon--check"></i></td>
-  	          <td class="table__cell">Розовый фильтр<i class="icon  icon--check"></i></td>
-  	          <td class="table__cell">Розовый фильтр<i class="icon  icon--check"></i></td>
-            </tr>
-            <tr>
-              <td class="table__cell  table__cell--additional">Смайлики</td>
-  	          <td class="table__cell">Смайлики<i class="icon  icon--check"></i></td>
-  	          <td class="table__cell">Смайлики<i class="icon  icon--check"></i></td>
-  	          <td class="table__cell">Смайлики<i class="icon  icon--check"></i></td>
-            </tr>
-            <tr>
-              <td class="table__cell  table__cell--additional">Комментарии</td>
-  	          <td class="table__cell">Комментарии<i class="icon  icon--cross"></i></td>
-  	          <td class="table__cell">Комментарии<i class="icon  icon--cross"></i></td>
-  	          <td class="table__cell">Комментарии<i class="icon  icon--cross"></i></td>
-            </tr>
-          </table>
-          <div class="controls-points">
-            <label class="controls-points__item" for="btn4"></label>
-            <label class="controls-points__item" for="btn5"></label>
-            <label class="controls-points__item" for="btn6"></label>
-          </div>
-        </div>
-      </div>
-      <div class="location">
-        <div class="contact-details">
-          <div class="wrapper">
-            <p class="contact-details__promo">Остались вопросы?<br>Свяжитесь с нами!</p>
-            <div class="contact-details__content">
-              <div class="contact-details__field  contact-details__field--phone">
-                Звоните:
-                <span class="contact-details__item">
-                  <a class="contact-details__link" href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
-                </span>
+            </fieldset>
+            <fieldset class="form__fieldset  form__fieldset--gray  form__fieldset--radio">
+              <h3 class="form__subtitle"><span>С каким приложением путешествовали?*</span></h3>
+              <div class="form__field">
+                <input class="form__item--radio" type="radio" name="app-survey" id="iOS" value="iOS" required>
+                <label class="form__label  form__label--radio" for="iOS">Pink для iOS</label>
               </div>
-              <div class="contact-details__field  contact-details__field--email">
-                Пишите:
-                <span class="contact-details__item">
-                  <a class="contact-details__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                </span>
+              <div class="form__field">
+                <input class="form__item--radio" type="radio" name="app-survey" id="Android" value="Android">
+                <label class="form__label  form__label--radio" for="Android">Pink на Android</label>
               </div>
-              <div class="contact-details__field  contact-details__field--address">
-                Приезжайте в гости:
-                <span class="contact-details__item">ул. Большая Конюшенная, 19/8</span>
+              <div class="form__field">
+                <input class="form__item--radio" type="radio" name="app-survey" id="Windows" value="Windows">
+                <label class="form__label  form__label--radio" for="Windows">Windows Phone</label>
               </div>
-            </div>
-          </div>
+            </fieldset>
+            <fieldset class="form__fieldset  form__fieldset--travel-date">
+              <h3 class="form__subtitle"><span>Когда вы путешествовали?*</span></h3>
+              <div class="form__field">
+                <input class="form__item  form__item--text" type="text" name="travelling-beginning" id="travelling-beginning" placeholder="1 апреля 2015 года" required>
+                <label class="form__label" for="travelling-beginning">Дата выезда</label>
+              </div>
+              <div class="form__field  form__field--number">
+                <span class="form__minus"></span><input class="form__item  form__item--number" type="number" name="travelling-duration" id="travelling-duration" placeholder="10 дней" step="1" min="1" max="100" required><span class="form__plus"></span>
+                <label class="form__label" for="travelling-duration">Продолжительность</label>
+              </div>
+              <div class="form__field">
+                <input class="form__item  form__item--text" type="text" name="travelling-end" id="travelling-end" placeholder="1 апреля 2015 года" required disabled>
+                <label class="form__label" for="travelling-end">Дата возвращения</label>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset  form__fieldset--gray  form__fieldset--fellow">
+              <h3 class="form__subtitle"><span>Количество попутчиков*</span></h3>
+              <div class="form__field  form__field--number  form__field--fellows-number">
+                <span class="form__minus"></span><input class="form__item  form__item--number  form__item--fellow-number" type="number" name="fellow-traveler-number" id="fellow-traveler-number" value="2" step="1" min="1" max="10" required><span class="form__plus"></span>
+              </div>
+              <div class="form__field  form__field--fellows-data">
+                <div class="form__field  form__field--index-number-col">
+                  <span class="form__number-symbol">№</span>
+                  <span class="form__index-number"></span>
+                </div>
+                <div class="form__field  form__field--col">
+                  <div class="form__field">
+                    <label class="form__label  form__label--person-data" for="fellow-traveler1-name">Имя*</label>
+                    <input class="form__item  form__item--text  form__item--with-index" type="text" name="fellow-traveler1-name" id="fellow-traveler1-name" placeholder="Введите ваше имя" required>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label  form__label--person-data" for="fellow-traveler1-nickname">Прозвище:</label>
+                    <input class="form__item  form__item--text" type="text" name="fellow-traveler1-nickname" id="fellow-traveler1-nickname" placeholder="Ну как же без этого!">
+                  </div>
+                </div>
+                <div class="form__field  form__field--delete-item">
+                  <a href="#">Удалить</a>
+                </div>
+              </div>
+              <div class="form__field  form__field--fellows-data">
+                <div class="form__field  form__field--index-number-col">
+                  <span class="form__number-symbol">№</span>
+                  <span class="form__index-number"></span>
+                </div>
+                <div class="form-field  form__field--col">
+                  <div class="form__field">
+                    <label class="form__label  form__label--person-data" for="fellow-traveler2-name">Имя*</label>
+                    <input class="form__item  form__item--text  form__item--with-index" type="text" name="fellow-traveler2-name" id="fellow-traveler2-name" placeholder="Введите ваше имя" required>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label  form__label--person-data" for="fellow-traveler2-nickname">Прозвище:</label>
+                    <input class="form__item  form__item--text" type="text" name="fellow-traveler2-nickname" id="fellow-traveler2-nickname" placeholder="Ну как же без этого!">
+                  </div>
+                </div>
+                <div class="form__field  form__field--delete-item">
+                  <a href="#">Удалить</a>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset  form__fieldset--checkbox">
+              <h3 class="form__subtitle"><span>Ваши безбашенные достижения в путешествии</span></h3>
+              <div class="form__field  form__field--checkbox">
+                <input class="form__item--checkbox" type="checkbox" name="shark-selfy" id="shark-selfy" checked>
+                <label class="form__label  form__label--checkbox" for="shark-selfy"><span class="form__check-field"><i class="icon  icon--check"></i></span>Сделал селфи с акулой</label>
+              </div>
+              <div class="form__field  form__field--checkbox">
+                <input class="form__item--checkbox" type="checkbox" name="sunburned" id="sunburned" checked>
+                <label class="form__label  form__label--checkbox" for="sunburned"><span class="form__check-field"><i class="icon  icon--check"></i></span>Обгорел на пляже</label>
+              </div>
+              <div class="form__field  form__field--checkbox">
+                <input class="form__item--checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
+                <label class="form__label  form__label--checkbox" for="chuck-norris"><span class="form__check-field"><i class="icon  icon--check"></i></span>Видел Чак Норриса</label>
+              </div>
+              <div class="form__field  form__field--checkbox">
+                <input class="form__item--checkbox" type="checkbox" name="souvenir" id="souvenir">
+                <label class="form__label  form__label--checkbox" for="souvenir"><span class="form__check-field"><i class="icon  icon--check"></i></span>Накупил сувениров</label>
+              </div>
+              <div class="form__field  form__field--checkbox">
+                <input class="form__item--checkbox" type="checkbox" name="tower" id="tower" checked>
+                <label class="form__label  form__label--checkbox" for="tower"><span class="form__check-field"><i class="icon  icon--check"></i></span>Удержал башню</label>
+              </div>
+              <div class="form__field  form__field--checkbox">
+                <input class="form__item--checkbox" type="checkbox" name="hotel-crash" id="hotel-crash">
+                <label class="form__label  form__label--checkbox" for="hotel-crash"><span class="form__check-field"><i class="icon  icon--check"></i></span>Разгромил отель</label>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset  form__fieldset--gray  form__fieldset--upload">
+              <h3 class="form__subtitle"><span>Ваши фотографии из поездки*</span></h3>
+              <label class="btn  btn--bord-gray  btn--upload">
+                Загрузить фото
+                <input class="form__item  form__item--file" id="upload_photo" type="file" name="photo" value="Загрузить фото" required multiple>
+              </label>
+              <div class="form__upload-area"></div>
+            </fieldset>
+            <fieldset class="form__fieldset  form__fieldset--submit">
+              <input class="btn  btn--bg-green" type="submit" value="Отправить форму">
+              <p class="footnote"><span class="footnote__star">*</span> — обязательные<span class="disappear-text"> для заполнения</span> поля</p>
+            </fieldset>
+          </form>
         </div>
-        <div id="map"></div>
       </div>
     </main>
 
@@ -430,7 +401,7 @@
           <a class="main-footer__link  main-footer__link--ha-logo" href="https://htmlacademy.ru/">
             <span class="social__icon  social__icon--ha-logo">
               <svg fill="#d22856" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 width="27px" height="34.1px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+                 width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
               <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
                 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5
                 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787
@@ -444,29 +415,55 @@
       </div>
     </footer>
 
-  <script src="http://maps.googleapis.com/maps/api/js"></script>
-  <script>
-    var myCenter = {lat:59.9386, lng:30.3225};
-    function initialize() {
-      var mapProp = {
-        center: myCenter,
-        zoom: 14,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(document.getElementById("map"),mapProp);
-      var marker = new google.maps.Marker({
-      position:myCenter,
-      icon:'img/map__marker.png'
-      });
+    <section class="popup  popup--success">
+        <div class="popup__content-wrapper">
+          <h2 class="popup__title">Ваша заявка отправлена</h2>
+          <p class="popup__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        </div>
+        <div class="popup__button-wrapper">
+          <button class="btn  btn--bg-green">Закрыть окно</button>
+        </div>
+    </section>
 
-    marker.setMap(map);
+    <section class="popup  popup--failure">
+        <h2 class="popup__title">Что-то пошло не так!</h2>
+        <p class="popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="btn  btn--bg-green">Ок</button>
+    </section>
 
-    }
+    <script id="image-template" type="text/html">
+      <div class="form__delete-file"></div>
+      <img src="{{image}}" alt="{{name}}">
+      <span class="form__uploaded-descr">{{name}}</span>
+    </script>
 
-    google.maps.event.addDomListener(window, 'load', initialize);
-  </script>
-  <script src="bower_components/tap/dist/tap.min.js"></script>
-  <script src="js/hamburger.js"></script>
+    <script id="fellow-template" type="text/html">
+
+        <div class="form__field  form__field--index-number-col">
+          <span class="form__number-symbol">№</span>
+          <span class="form__index-number"></span>
+        </div>
+        <div class="form-field  form__field--col">
+          <div class="form__field">
+            <label class="form__label  form__label--person-data" for="fellow-traveler2-name">Имя*</label>
+            <input class="form__item  form__item--text  form__item--with-index" type="text" name="fellow-traveler2-name" id="fellow-traveler2-name" placeholder="Введите ваше имя" required>
+          </div>
+          <div class="form__field">
+            <label class="form__label  form__label--person-data" for="fellow-traveler2-nickname">Прозвище:</label>
+            <input class="form__item  form__item--text" type="text" name="fellow-traveler2-nickname" id="fellow-traveler2-nickname" placeholder="Ну как же без этого!">
+          </div>
+        </div>
+        <div class="form__field  form__field--delete-item">
+          <a href="#">Удалить</a>
+        </div>
+
+    </script>
+
+    <script src="bower_components/mustache.js/mustache.min.js"></script>
+    <script src="bower_components/tap/dist/tap.min.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/inputNumChanger.js"></script>
 
   </body>
 </html>

@@ -33,5 +33,14 @@
   },
   "engines": {
     "node": "^0.12.7"
+  },
+  "devDependencies": {
+    "grunt-combine-media-queries": "^1.0.19",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-htmlmin": "^0.5.0",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-csscomb": "^3.1.0"
   }
 }
