@@ -171,6 +171,9 @@
     }
 
     &--submit {
+      .btn {
+        margin-bottom: 35px;
+      }
 
       @media (min-width: 700px) {
         padding: 0;

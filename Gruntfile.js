@@ -99,6 +99,7 @@ module.exports = function(grunt) {
         src: ['source/js/form.js',
               'source/js/hamburger.js',
               'source/js/inputNumChanger.js',
+              'source/js/nojs.js',
               'bower_components/mustache.js/mustache.min.js',
               'bower_components/tap/dist/tap.min.js'
             ],

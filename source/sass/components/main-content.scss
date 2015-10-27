@@ -32,6 +32,7 @@
         background-image: url("../img/iphone-hand-mobile@1x.png");
         background-repeat: no-repeat;
         background-position: 0 86px;
+        background-size: 258px 286px;
 
         @media (min-resolution: 144dpi),
                (min-resolution: 1.5dppx) {
@@ -63,7 +64,6 @@
       padding-top: 185px;
       padding-bottom: 19px;
       background-image: url("../img/background-tablet@1x.jpg");
-      background-size: 175%;
       background-position: center top;
 
       @media (min-resolution: 144dpi),
@@ -81,6 +81,7 @@
           background-image: url("../img/iphone-hand-tablet@1x.png");
           background-repeat: no-repeat;
           background-position: bottom;
+          background-size: 700px 545px;
 
           @media (min-resolution: 144dpi),
                  (min-resolution: 1.5dppx) {
@@ -123,6 +124,7 @@
           background-image: url("../img/iphone-hand-desktop@1x.png");
           background-repeat: no-repeat;
           background-position: 10% 100%;
+          background-size: 1050px 645px;
 
           @media (min-resolution: 144dpi),
                  (min-resolution: 1.5dppx) {
