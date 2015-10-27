@@ -1,5 +1,9 @@
 (function () {
-  var formFellowFieldset = document.querySelector(".form__fieldset--fellow");
+  if (document.title == "Pink. Стартовая") {
+  return;
+  }
+
+  var formFellowsContainer = document.querySelector(".form__field--fellows-container");
   var formNumberField = document.querySelectorAll(".form__field--number");
   var html = document.querySelector("#fellow-template").innerHTML;
 
@@ -31,13 +35,13 @@
           var div = document.createElement("div");
           div.classList.add("form__field", "form__field--fellows-data");
           div.innerHTML = html;
-          formFellowFieldset.appendChild(div);
+          formFellowsContainer.appendChild(div);
         }
       } else {
           if (value > 0) {
             input.value = value - 1;
           if (input.classList.contains("form__item--fellow-number")) {
-            formFellowFieldset.removeChild(formFellowFieldset.lastElementChild);
+            formFellowsContainer.removeChild(formFellowsContainer.lastElementChild);
           }
         }
       }

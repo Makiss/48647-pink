@@ -1,6 +1,6 @@
 (function() {
 
-  if (!("FormData" in window)) {
+  if (!("FormData" in window) || document.title == "Pink. Стартовая") {
   return;
   }
 

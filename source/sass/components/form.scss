@@ -281,6 +281,10 @@
       }
     }
 
+    &--fellows-container {
+      counter-reset: list;
+    }
+
     &--fellows-data {
       width: 100%;
       @include clearfix();
@@ -391,7 +395,7 @@
     border-radius: 2px 0 0 2px;
     @include border();
     border-right: none;
-    counter-reset: list;
+
 
     &::before {
       counter-increment: list;
@@ -761,7 +765,7 @@
 
     @media (min-width: 700px) {
       font-size: $font-size--small;
-      line-height: 1.8rem;
+      line-height: 1.6rem;
     }
   }
 

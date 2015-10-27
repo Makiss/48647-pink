@@ -2,7 +2,7 @@
 <html class="no-js" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Pink. Стартовая</title>
+    <title>Pink. Форма</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.min.css">
@@ -175,69 +175,71 @@
               <div class="form__field  form__field--number  form__field--fellows-number">
                 <span class="form__minus"></span><input class="form__item  form__item--number  form__item--fellow-number" type="number" name="fellow-traveler-number" id="fellow-traveler-number" value="2" step="1" min="1" max="10" required><span class="form__plus"></span>
               </div>
-              <div class="form__field  form__field--fellows-data">
-                <div class="form__field  form__field--index-number-col">
-                  <span class="form__number-symbol">№</span>
-                  <span class="form__index-number"></span>
-                </div>
-                <div class="form__field  form__field--col">
-                  <div class="form__field">
-                    <label class="form__label  form__label--person-data" for="fellow-traveler1-name">Имя*</label>
-                    <input class="form__item  form__item--text  form__item--with-index" type="text" name="fellow-traveler1-name" id="fellow-traveler1-name" placeholder="Введите ваше имя" required>
+              <div class="form__field  form__field--fellows-container">
+                <div class="form__field  form__field--fellows-data">
+                  <div class="form__field  form__field--index-number-col">
+                    <span class="form__number-symbol">№</span>
+                    <span class="form__index-number"></span>
                   </div>
-                  <div class="form__field">
-                    <label class="form__label  form__label--person-data" for="fellow-traveler1-nickname">Прозвище:</label>
-                    <input class="form__item  form__item--text" type="text" name="fellow-traveler1-nickname" id="fellow-traveler1-nickname" placeholder="Ну как же без этого!">
+                  <div class="form__field  form__field--col">
+                    <div class="form__field">
+                      <label class="form__label  form__label--person-data" for="fellow-traveler1-name">Имя*</label>
+                      <input class="form__item  form__item--text  form__item--with-index" type="text" name="fellow-traveler1-name" id="fellow-traveler1-name" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="form__field">
+                      <label class="form__label  form__label--person-data" for="fellow-traveler1-nickname">Прозвище:</label>
+                      <input class="form__item  form__item--text" type="text" name="fellow-traveler1-nickname" id="fellow-traveler1-nickname" placeholder="Ну как же без этого!">
+                    </div>
                   </div>
-                </div>
-                <div class="form__field  form__field--delete-item">
-                  <a href="#">Удалить</a>
-                </div>
-              </div>
-              <div class="form__field  form__field--fellows-data">
-                <div class="form__field  form__field--index-number-col">
-                  <span class="form__number-symbol">№</span>
-                  <span class="form__index-number"></span>
-                </div>
-                <div class="form-field  form__field--col">
-                  <div class="form__field">
-                    <label class="form__label  form__label--person-data" for="fellow-traveler2-name">Имя*</label>
-                    <input class="form__item  form__item--text  form__item--with-index" type="text" name="fellow-traveler2-name" id="fellow-traveler2-name" placeholder="Введите ваше имя" required>
-                  </div>
-                  <div class="form__field">
-                    <label class="form__label  form__label--person-data" for="fellow-traveler2-nickname">Прозвище:</label>
-                    <input class="form__item  form__item--text" type="text" name="fellow-traveler2-nickname" id="fellow-traveler2-nickname" placeholder="Ну как же без этого!">
+                  <div class="form__field  form__field--delete-item">
+                    <a href="#">Удалить</a>
                   </div>
                 </div>
-                <div class="form__field  form__field--delete-item">
-                  <a href="#">Удалить</a>
+                <div class="form__field  form__field--fellows-data">
+                  <div class="form__field  form__field--index-number-col">
+                    <span class="form__number-symbol">№</span>
+                    <span class="form__index-number"></span>
+                  </div>
+                  <div class="form-field  form__field--col">
+                    <div class="form__field">
+                      <label class="form__label  form__label--person-data" for="fellow-traveler2-name">Имя*</label>
+                      <input class="form__item  form__item--text  form__item--with-index" type="text" name="fellow-traveler2-name" id="fellow-traveler2-name" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="form__field">
+                      <label class="form__label  form__label--person-data" for="fellow-traveler2-nickname">Прозвище:</label>
+                      <input class="form__item  form__item--text" type="text" name="fellow-traveler2-nickname" id="fellow-traveler2-nickname" placeholder="Ну как же без этого!">
+                    </div>
+                  </div>
+                  <div class="form__field  form__field--delete-item">
+                    <a href="#">Удалить</a>
+                  </div>
                 </div>
               </div>
             </fieldset>
             <fieldset class="form__fieldset  form__fieldset--checkbox">
               <h3 class="form__subtitle"><span>Ваши безбашенные достижения в путешествии</span></h3>
               <div class="form__field  form__field--checkbox">
-                <input class="form__item--checkbox" type="checkbox" name="shark-selfy" id="shark-selfy" checked>
+                <input class="form__item  form__item--checkbox" type="checkbox" name="shark-selfy" id="shark-selfy" checked>
                 <label class="form__label  form__label--checkbox" for="shark-selfy"><span class="form__check-field"><i class="icon  icon--check"></i></span>Сделал селфи с акулой</label>
               </div>
               <div class="form__field  form__field--checkbox">
-                <input class="form__item--checkbox" type="checkbox" name="sunburned" id="sunburned" checked>
+                <input class="form__item  form__item--checkbox" type="checkbox" name="sunburned" id="sunburned" checked>
                 <label class="form__label  form__label--checkbox" for="sunburned"><span class="form__check-field"><i class="icon  icon--check"></i></span>Обгорел на пляже</label>
               </div>
               <div class="form__field  form__field--checkbox">
-                <input class="form__item--checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
+                <input class="form__item  form__item--checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
                 <label class="form__label  form__label--checkbox" for="chuck-norris"><span class="form__check-field"><i class="icon  icon--check"></i></span>Видел Чак Норриса</label>
               </div>
               <div class="form__field  form__field--checkbox">
-                <input class="form__item--checkbox" type="checkbox" name="souvenir" id="souvenir">
+                <input class="form__item  form__item--checkbox" type="checkbox" name="souvenir" id="souvenir">
                 <label class="form__label  form__label--checkbox" for="souvenir"><span class="form__check-field"><i class="icon  icon--check"></i></span>Накупил сувениров</label>
               </div>
               <div class="form__field  form__field--checkbox">
-                <input class="form__item--checkbox" type="checkbox" name="tower" id="tower" checked>
+                <input class="form__item  form__item--checkbox" type="checkbox" name="tower" id="tower" checked>
                 <label class="form__label  form__label--checkbox" for="tower"><span class="form__check-field"><i class="icon  icon--check"></i></span>Удержал башню</label>
               </div>
               <div class="form__field  form__field--checkbox">
-                <input class="form__item--checkbox" type="checkbox" name="hotel-crash" id="hotel-crash">
+                <input class="form__item  form__item--checkbox" type="checkbox" name="hotel-crash" id="hotel-crash">
                 <label class="form__label  form__label--checkbox" for="hotel-crash"><span class="form__check-field"><i class="icon  icon--check"></i></span>Разгромил отель</label>
               </div>
             </fieldset>
