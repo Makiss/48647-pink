@@ -32,7 +32,7 @@
 }
 
 .form {
-	
+
   &__fieldset {
     position: relative;
     margin: 0;
@@ -241,6 +241,10 @@
     }
 
     &--fellows-number {
+      .no-js & {
+        display: none;
+      }
+
       margin-bottom: 30px;
       padding-bottom: 48px;
       border-bottom: 2px solid $border-gray;
@@ -405,6 +409,10 @@
 
   &__plus,
   &__minus {
+    .no-js & {
+      display: none;
+    }
+
     display: inline-block;
     position: absolute;
     top: 2px;
@@ -538,7 +546,7 @@
     }
 
     &--radio {
-      
+
       &:hover {
         &:before {
           border-color: $base-color;
@@ -745,12 +753,12 @@
 
   &__uploaded-descr {
     font-size: 1.2rem;
-    line-height: 1.8rem;
+    line-height: 1.4rem;
     text-transform: uppercase;
 
     @media (min-width: 700px) {
       font-size: $font-size--small;
-      line-height: 2.5rem;
+      line-height: 1.8rem;
     }
   }
 
@@ -776,7 +784,7 @@
 
     &:active {
       background-color: $base-color;
-      
+
       &::before,
       &::after {
         background-color: $white;

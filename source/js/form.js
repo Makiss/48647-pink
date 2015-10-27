@@ -1,8 +1,11 @@
 (function() {
+  var noJsHtml = document.querySelector(".no-js");
+  noJsHtml.classList.remove("no-js");
+
   if (!("FormData" in window)) {
   return;
   }
-  
+
   var form = document.querySelector(".form");
   var template = document.querySelector("#image-template").innerHTML;
   var area = document.querySelector(".form__upload-area");

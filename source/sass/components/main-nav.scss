@@ -6,8 +6,12 @@
     width: 700px;
     text-align: right;
   }
-	
+
   &__list {
+    .no-js & {
+      display: block;
+    }
+
     display: none;
     position: absolute;
     left: 0;
@@ -97,7 +101,11 @@
   }
 
   &__toggle {
-    position: relative; 
+    .no-js & {
+      display: none;
+    }
+
+    position: relative;
     float: right;
     width: 50px;
     height:24px;
@@ -156,7 +164,7 @@
   }
 
   &__toggle-close {
-    position: relative; 
+    position: relative;
     float: right;
     width: 23px;
     height: 22px;

@@ -89,14 +89,15 @@ module.exports = function(grunt) {
           'build/index.min.html': 'build/index.html',
           'build/form.min.html': 'build/form.html',
           'build/blog.min.html': 'build/blog.html',
-          'build/post.min.html': 'build/post.html'        }
+          'build/post.min.html': 'build/post.html'
+        }
       }
     },
 
     concat: {
       dist: {
-        src: ['source/js/form.js', 
-              'source/js/hamburger.js', 
+        src: ['source/js/form.js',
+              'source/js/hamburger.js',
               'source/js/inputNumChanger.js',
               'bower_components/mustache.js/mustache.min.js',
               'bower_components/tap/dist/tap.min.js'

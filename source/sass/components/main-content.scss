@@ -1,6 +1,11 @@
 .main-content {
 
   &__header {
+    .no-js & {
+      padding-top: 415px;
+      background-position: center;
+    }
+
     padding-top: 87px;
     padding-bottom: 1px;
     background-color: $base-color;
@@ -51,6 +56,10 @@
     }
 
     @media (min-width: 700px) {
+      .no-js & {
+        padding-top: 450px;
+      }
+
       padding-top: 185px;
       padding-bottom: 19px;
       background-image: url("../img/background-tablet@1x.jpg");
@@ -92,6 +101,11 @@
     }
 
     @media (min-width: 980px) {
+      .no-js & {
+        padding-top: 180px;
+        background-position: center -30px;
+      }
+
       padding-top: 180px;
       padding-bottom: 40px;
       background-image: url("../img/background-fullsize.jpg");

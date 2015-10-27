@@ -1,4 +1,8 @@
 .main-header {
+  .no-js & {
+    background-color: $base-color;
+  }
+
   position: absolute;
   top: 0;
   left: 0;
@@ -17,5 +21,11 @@
     padding-right: 0;
     padding-top: 26px;
     padding-bottom: 42px;
+  }
+
+  @media (min-width: 980px) {
+    .no-js & {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
   }
 }

@@ -22,7 +22,7 @@
       var value = Number(input.value);
 
       if(isNaN(value)) {
-        value = 0; 
+        value = 0;
       }
 
       if (operation) {
@@ -40,7 +40,7 @@
             formFellowFieldset.removeChild(formFellowFieldset.lastElementChild);
           }
         }
-      } 
+      }
     }
   }
 })();

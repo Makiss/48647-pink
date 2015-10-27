@@ -5,9 +5,19 @@
   }
 
   &--header {
+    .no-js & {
+      position: static;
+      margin: 0 auto;
+
+      svg {
+        margin-left: -65px;
+      }
+    }
+
     position: absolute;
     top: 5px;
     left: -52px;
+    width: 75px;
 
     &:hover {
       .logo-text__path,
@@ -32,8 +42,15 @@
     }
 
     @media (min-width: 700px) {
-      position: static;
-      float: left;
+      .no-js & {
+        svg {
+          margin-left: 0;
+        }
+      }
+
+      top: 27px;
+      left: 40px;
+      width: 146px;
 
       .spectacles {
         opacity: 1;
@@ -41,11 +58,13 @@
     }
 
     @media (min-width: 980px) {
+      position: static;
+      float: left;
 
       .spectacles {
         opacity: 0;
       }
-      
+
       .pink-point,
       .spectacles-broken {
         opacity: 1;
@@ -87,7 +106,7 @@
 
     @media (min-width: 980px) {
       margin-right: 25.10638297872340425531914893617%;
-      
+
       .spectacles {
         opacity: 0;
       }
