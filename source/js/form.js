@@ -1,6 +1,6 @@
 (function() {
 
-  if (!("FormData" in window) || document.title == "Pink. Стартовая") {
+  if (!("FormData" in window) || !(document.querySelector(".form")) ) {
   return;
   }
 

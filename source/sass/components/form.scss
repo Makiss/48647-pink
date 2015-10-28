@@ -760,12 +760,12 @@
 
   &__uploaded-descr {
     font-size: 1.2rem;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
     text-transform: uppercase;
 
     @media (min-width: 700px) {
       font-size: $font-size--small;
-      line-height: 1.6rem;
+      line-height: 1.8rem;
     }
   }
 

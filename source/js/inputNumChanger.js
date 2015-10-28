@@ -1,5 +1,5 @@
 (function () {
-  if (document.title == "Pink. Стартовая") {
+  if (!(document.querySelector(".form")) ) {
   return;
   }
 

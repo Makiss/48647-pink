@@ -1,6 +1,7 @@
 @media (min-width: 980px) {
   .arrow {
     position: absolute;
+    z-index: 5;
     top: 55%;
     width: 22px;
     height: 42px;
@@ -25,6 +26,7 @@
       content: "";
       display: block;
       position: absolute;
+      z-index: 5;
       top: 50%;
       margin-top: -1.5px;
       width: 29px;
