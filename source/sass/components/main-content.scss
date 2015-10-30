@@ -1,0 +1,165 @@
+.main-content {
+
+  &__header {
+    .no-js & {
+      padding-top: 415px;
+      background-position: center;
+    }
+
+    padding-top: 87px;
+    padding-bottom: 1px;
+    background-color: $base-color;
+    background-image: url("../img/background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -30px;
+
+    @media (min-resolution: 144dpi),
+           (min-resolution: 1.5dppx) {
+             background-image: url("../img/background-mobile@2x.jpg");
+           }
+
+    @media (min-resolution: 240dpi),
+           (min-resolution: 2.5dppx) {
+             background-image: url("../img/background-mobile@3x.jpg");
+           }
+
+    &--more-bg {
+      padding-bottom: 0;
+
+      .wrapper {
+        padding: 0;
+        background-image: url("../img/iphone-hand-mobile@1x.png");
+        background-repeat: no-repeat;
+        background-position: 0 86px;
+        background-size: 258px 286px;
+
+        @media (min-resolution: 144dpi),
+               (min-resolution: 1.5dppx) {
+                 background-image: url("../img/iphone-hand-mobile@2x.png");
+               }
+
+        @media (min-resolution: 240dpi),
+               (min-resolution: 2.5dppx) {
+                 background-image: url("../img/iphone-hand-mobile@3x.png");
+               }
+      }
+    }
+
+    @media (min-width: 350px) {
+      &--more-bg {
+
+        .wrapper {
+          background-repeat: no-repeat;
+          background-position: center 86px;
+        }
+      }
+    }
+
+    @media (min-width: 700px) {
+      .no-js & {
+        padding-top: 450px;
+      }
+
+      padding-top: 185px;
+      padding-bottom: 19px;
+      background-image: url("../img/background-tablet@1x.jpg");
+      background-position: center top;
+
+      @media (min-resolution: 144dpi),
+             (min-resolution: 1.5dppx) {
+               background-image: url("../img/background-tablet@2x.jpg");
+             }
+
+      &--more-bg {
+        padding-bottom: 0;
+
+        .wrapper {
+          padding-top: 30px;
+          padding-left: 40px;
+          padding-right: 40px;
+          background-image: url("../img/iphone-hand-tablet@1x.png");
+          background-repeat: no-repeat;
+          background-position: bottom;
+          background-size: 700px 545px;
+
+          @media (min-resolution: 144dpi),
+                 (min-resolution: 1.5dppx) {
+                   background-image: url("../img/iphone-hand-tablet@2x.png");
+                 }
+        }
+
+        .main-content__title {
+          margin: 0;
+          margin-bottom: 25px;
+          padding-left: 40px;
+          padding-right: 40px;
+          width: 280px;
+          font-size: 4rem;
+          line-height: 5rem;
+        }
+      }
+    }
+
+    @media (min-width: 980px) {
+      .no-js & {
+        padding-top: 180px;
+        background-position: center -30px;
+      }
+
+      padding-top: 180px;
+      padding-bottom: 40px;
+      background-image: url("../img/background-fullsize.jpg");
+      background-size: 110%;
+
+      &--more-bg {
+        padding-top: 208px;
+        padding-bottom: 0;
+        background-size: cover;
+
+        .wrapper {
+          padding-left: 0;
+          padding-right: 0;
+          min-height: 645px;
+          background-image: url("../img/iphone-hand-desktop@1x.png");
+          background-repeat: no-repeat;
+          background-position: 10% 100%;
+          background-size: 1050px 645px;
+
+          @media (min-resolution: 144dpi),
+                 (min-resolution: 1.5dppx) {
+                   background-image: url("../img/iphone-hand-desktop@2x.png");
+                 }
+        }
+
+        .main-content__title {
+          width: 300px;
+          font-size: 5rem;
+          line-height: 6rem;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 55px;
+    width: 225px;
+    font-weight: $text--light;
+    font-size: $font-size--large;
+    line-height: 3.4rem;
+    color: $white;
+
+    @media (min-width: 700px) {
+      width: 475px;
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+
+    @media (min-width: 980px) {
+      width: 780px;
+    }
+  }
+}

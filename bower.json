@@ -1,0 +1,16 @@
+{
+  "name": "48647-pink",
+  "description": "Обучающий проект «pink» от HTML Academy",
+  "main": "Gruntfile.js",
+  "authors": [
+    "Максим Сёмушкин"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Makiss/48647-pink",
+  "moduleType": [],
+  "private": true,
+  "dependencies": {
+    "tap": "~1.0.7",
+    "mustache.js": "~2.2.0"
+  }
+}
